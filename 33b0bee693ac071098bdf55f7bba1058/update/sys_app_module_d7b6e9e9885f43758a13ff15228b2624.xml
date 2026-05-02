@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_module">
+  <sys_app_module action="INSERT_OR_UPDATE">
+    <sys_id>d7b6e9e9885f43758a13ff15228b2624</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sys_app_module_d7b6e9e9885f43758a13ff15228b2624</sys_update_name>
+    <active>true</active>
+    <application>8c06a30ca50e43a4a49cd6ebbb026503</application>
+    <hint>Track and manage consumer reward disbursements</hint>
+    <link_type>LIST</link_type>
+    <name>x_1845356_circle_0_reward_fulfilment</name>
+    <order>500</order>
+    <title>Reward Fulfilment</title>
+  </sys_app_module>
+</record_update>
