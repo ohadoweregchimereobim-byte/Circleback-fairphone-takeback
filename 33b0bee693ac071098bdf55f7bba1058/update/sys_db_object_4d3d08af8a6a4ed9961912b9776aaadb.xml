@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+  <sys_db_object action="INSERT_OR_UPDATE">
+    <sys_id>4d3d08af8a6a4ed9961912b9776aaadb</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sys_db_object_4d3d08af8a6a4ed9961912b9776aaadb</sys_update_name>
+    <access>public</access>
+    <actions_access>false</actions_access>
+    <alter_access>false</alter_access>
+    <caller_access>0</caller_access>
+    <client_scripts_access>false</client_scripts_access>
+    <create_access>false</create_access>
+    <delete_access>false</delete_access>
+    <is_extendable>false</is_extendable>
+    <label>Device Record</label>
+    <live_feed_enabled>false</live_feed_enabled>
+    <name>x_1845356_circle_0_device_record</name>
+    <number_ref category="x_1845356_circle_0_device_record" prefix="DEV">90818ebb52da4c36af55267f2bc0dc55</number_ref>
+    <read_access>true</read_access>
+    <scriptable_table>false</scriptable_table>
+    <super_class/>
+    <update_access>false</update_access>
+    <ws_access>true</ws_access>
+  </sys_db_object>
+</record_update>
