@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set field="certification" table="x_1845356_circle_0_recycling_partner">
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>5efa849cbefc45ffa91da05f370301f4</sys_id>
+      <name>x_1845356_circle_0_recycling_partner</name>
+      <element>certification</element>
+      <label>R2v3</label>
+      <value>r2v3</value>
+      <sequence>0</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>90ac432367ec41a8a91cf0154164dc8a</sys_id>
+      <name>x_1845356_circle_0_recycling_partner</name>
+      <element>certification</element>
+      <label>e-Stewards</label>
+      <value>e_stewards</value>
+      <sequence>1</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>3d86e710c52e40c09b7448dbd29cf4d2</sys_id>
+      <name>x_1845356_circle_0_recycling_partner</name>
+      <element>certification</element>
+      <label>ISO 14001</label>
+      <value>iso_14001</value>
+      <sequence>2</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>7372fd931f374a47a80505573d8cd7a5</sys_id>
+      <name>x_1845356_circle_0_recycling_partner</name>
+      <element>certification</element>
+      <label>Multiple</label>
+      <value>multiple</value>
+      <sequence>3</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>36cd386ae3a14d7da447b4902008d9d2</sys_id>
+      <name>x_1845356_circle_0_recycling_partner</name>
+      <element>certification</element>
+      <label>None</label>
+      <value>none</value>
+      <sequence>4</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>3a1bb20f64a342df81399482b543158a</sys_id>
+      <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+      <name>x_1845356_circle_0_recycling_partner</name>
+      <element>certification</element>
+    </sys_choice_set>
+  </sys_choice_set>
+</record_update>
