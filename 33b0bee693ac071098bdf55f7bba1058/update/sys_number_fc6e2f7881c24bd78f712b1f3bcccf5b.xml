@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+  <sys_number action="INSERT_OR_UPDATE">
+    <sys_id>fc6e2f7881c24bd78f712b1f3bcccf5b</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sys_number_fc6e2f7881c24bd78f712b1f3bcccf5b</sys_update_name>
+    <category>x_1845356_circle_0_processing_job</category>
+    <maximum_digits>4</maximum_digits>
+    <number>1</number>
+    <prefix>JOB</prefix>
+  </sys_number>
+</record_update>
