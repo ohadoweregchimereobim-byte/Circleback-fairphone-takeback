@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_ui_list table="x_1845356_circle_0_recycling_partner">
+    <sys_ui_list_element action="INSERT_OR_UPDATE">
+      <sys_id>f7ece6b43c794bd4970ee4ba3c234bc8</sys_id>
+      <list_id display_value="x_1845356_circle_0_recycling_partner" element="NULL" name="x_1845356_circle_0_recycling_partner" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">53ea9cc5b4ff446da24f84456aa5437c</list_id>
+      <element>partner_name</element>
+      <position>0</position>
+    </sys_ui_list_element>
+    <sys_ui_list_element action="INSERT_OR_UPDATE">
+      <sys_id>18bd3036518e497aaa0a31dcd5b8194b</sys_id>
+      <list_id display_value="x_1845356_circle_0_recycling_partner" element="NULL" name="x_1845356_circle_0_recycling_partner" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">53ea9cc5b4ff446da24f84456aa5437c</list_id>
+      <element>country</element>
+      <position>1</position>
+    </sys_ui_list_element>
+    <sys_ui_list_element action="INSERT_OR_UPDATE">
+      <sys_id>f39569070c6b473faf97b522cce46bd6</sys_id>
+      <list_id display_value="x_1845356_circle_0_recycling_partner" element="NULL" name="x_1845356_circle_0_recycling_partner" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">53ea9cc5b4ff446da24f84456aa5437c</list_id>
+      <element>certification</element>
+      <position>2</position>
+    </sys_ui_list_element>
+    <sys_ui_list_element action="INSERT_OR_UPDATE">
+      <sys_id>dda45820496a466ab598ce7fb23f72e4</sys_id>
+      <list_id display_value="x_1845356_circle_0_recycling_partner" element="NULL" name="x_1845356_circle_0_recycling_partner" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">53ea9cc5b4ff446da24f84456aa5437c</list_id>
+      <element>active</element>
+      <position>3</position>
+    </sys_ui_list_element>
+    <sys_ui_list action="INSERT_OR_UPDATE">
+      <sys_id>53ea9cc5b4ff446da24f84456aa5437c</sys_id>
+      <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+      <view name="NULL">Default view</view>
+      <name>x_1845356_circle_0_recycling_partner</name>
+    </sys_ui_list>
+  </sys_ui_list>
+</record_update>
