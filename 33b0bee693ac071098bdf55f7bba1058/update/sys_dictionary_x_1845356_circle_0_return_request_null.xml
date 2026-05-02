@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary">
+  <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_1845356_circle_0_return_request">
+    <sys_id>d88df7173c384eb0b24556b270f98eac</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sys_dictionary_x_1845356_circle_0_return_request_null</sys_update_name>
+    <attributes/>
+    <audit>true</audit>
+    <element/>
+    <internal_type>collection</internal_type>
+    <name>x_1845356_circle_0_return_request</name>
+    <read_only>false</read_only>
+    <text_index>false</text_index>
+  </sys_dictionary>
+</record_update>
