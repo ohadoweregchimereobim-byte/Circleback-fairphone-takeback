@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+  <sys_security_acl action="INSERT_OR_UPDATE">
+    <sys_id>4410befed4834995af2c7ca2c187d70e</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sys_security_acl_4410befed4834995af2c7ca2c187d70e</sys_update_name>
+    <active>true</active>
+    <admin_overrides>true</admin_overrides>
+    <advanced>false</advanced>
+    <applies_to/>
+    <condition/>
+    <decision_type>allow</decision_type>
+    <description/>
+    <local_or_existing>Existing</local_or_existing>
+    <name>circleback-intake.*</name>
+    <operation>read</operation>
+    <script/>
+    <security_attribute/>
+    <sys_policy/>
+    <type>b9eb8a1b873303002941b53046cb1234</type>
+  </sys_security_acl>
+</record_update>

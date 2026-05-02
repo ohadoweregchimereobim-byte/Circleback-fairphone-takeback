@@ -285,8 +285,7 @@
     left: calc(50% + 16px);
     width: calc(100% - 32px);
   }
-}
-]]></css>
+}]]></css>
     <data_table>sp_instance</data_table>
     <demo_data/>
     <description/>
@@ -295,8 +294,8 @@
     <has_preview>false</has_preview>
     <id>cb_track_widget</id>
     <internal>false</internal>
-    <link>function link(scope, element, attrs, controller) {
-}</link>
+    <link><![CDATA[function link(scope, element, attrs, controller) {
+}]]></link>
     <name>CircleBack Track Widget</name>
     <option_schema/>
     <public>false</public>
