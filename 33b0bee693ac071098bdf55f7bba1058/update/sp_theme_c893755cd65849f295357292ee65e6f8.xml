@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+  <sp_theme action="INSERT_OR_UPDATE">
+    <sys_id>c893755cd65849f295357292ee65e6f8</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sp_theme_c893755cd65849f295357292ee65e6f8</sys_update_name>
+    <css_variables>
+    // ── Brand (Fairphone Green #2E7D32) ──
+    $brand-primary:         #2E7D32 !default;
+    $brand-primary-dark:    #1B5E20 !default;
+    $brand-primary-darker:  #0D3B13 !default;
+    $brand-primary-light:   #66BB6A !default;
+    $brand-primary-lighter: #C8E6C9 !default;
+    $body-bg:               sp-rgb(--now-color_background--primary, #FFFFFF) !default;
+    $link-color:            #2E7D32;
+    $link-hover-color:      #1B5E20;
+
+    // ── Backgrounds / Borders / Text (Coral structure) ──
+    $background-primary:   sp-rgb(--now-color_background--primary, #FFFFFF);
+    $background-secondary: sp-rgb(--now-color_background--secondary, #F5F6F7);
+    $background-tertiary:  sp-rgb(--now-color_background--tertiary, #E2E5E7);
+    $border-primary:   sp-rgb(--now-color_border--primary, #737F84);
+    $border-secondary: sp-rgb(--now-color_border--secondary, #AAB2B6);
+    $border-tertiary:  sp-rgb(--now-color_border--tertiary, #CFD5D7);
+    $text-color:    sp-rgb(--now-color_text--primary, #10171A) !default;
+    $text-secondary: sp-rgb(--now-color_text--secondary, #232E33) !default;
+    $text-muted:    sp-rgb(--now-color_text--tertiary, #37444A) !default;
+
+    // ── Navbar (aligned with green brand — Stock Header uses .navbar-inverse) ──
+    $navbar-inverse-bg:                #2E7D32 !default;
+    $navbar-inverse-border:            #1B5E20 !default;
+    $navbar-inverse-link-color:        #FFFFFF !default;
+    $navbar-inverse-link-hover-color:  #FFFFFF !default;
+    $navbar-inverse-link-active-color: #FFFFFF !default;
+    $navbar-inverse-brand-color:       #FFFFFF !default;
+    $navbar-inverse-toggle-icon-bar-bg: #FFFFFF !default;
+    $navbar-inverse-toggle-border-color: #1B5E20 !default;
+
+    // ── Buttons ──
+    $btn-primary-color:  #FFFFFF !default;
+    $btn-primary-bg:     #2E7D32;
+    $btn-primary-border: #2E7D32;
+    $btn-default-bg:     $background-primary;
+    $btn-default-color:  #1B5E20;
+    $btn-default-border: sp-rgb(--now-color_border--tertiary, #CFD5D7) !default;
+
+    // ── States (Coral structure) ──
+    $brand-success: sp-rgb(--now-color_alert--positive-3, #3E8600) !default;
+    $brand-warning: sp-rgb(--now-color_alert--warning-3, #B29800) !default;
+    $brand-danger:  sp-rgb(--now-color_alert--critical-3, #E52239) !default;
+    $brand-info:    sp-rgb(--now-color_alert--info-3, #007AC9) !default;
+    $state-success-bg: sp-rgb(--now-color_alert--positive-0, #C7DCB5) !default;
+    $state-warning-bg: sp-rgb(--now-color_alert--warning-0, #ECE5BF) !default;
+    $state-danger-bg:  sp-rgb(--now-color_alert--critical-0, #F9C8CE) !default;
+    $state-info-bg:    sp-rgb(--now-color_alert--info-0, #BDDCF1) !default;
+
+    // ── Panels / Components ──
+    $panel-primary-text: #FFFFFF !default;
+    $panel-border-color: $border-tertiary !default;
+    $input-border: sp-rgb(--now-color_border--primary, #737F84) !default;
+    $input-border-focus: #2E7D32 !default;
+    $sp-page-bg: sp-rgb(--now-color_background--secondary, #F5F6F7);
+  </css_variables>
+    <footer/>
+    <footer_fixed>true</footer_fixed>
+    <header>bf5ec2f2cb10120000f8d856634c9c0c</header>
+    <icon/>
+    <logo/>
+    <logo_alt_text/>
+    <matching_now_experience_theme/>
+    <name>CircleBack Green Theme</name>
+    <navbar_fixed>true</navbar_fixed>
+    <turn_off_scss_compilation>false</turn_off_scss_compilation>
+  </sp_theme>
+</record_update>

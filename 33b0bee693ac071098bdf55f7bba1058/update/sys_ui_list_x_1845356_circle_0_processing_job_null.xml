@@ -1,41 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
   <sys_ui_list table="x_1845356_circle_0_processing_job">
     <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>1caa8fed28d64730ad5ccf28d68873c3</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="x_1845356_circle_0_recycling_partner" relationship="NULL" sys_domain="global" view="Default view">19b7c0de44184d0aa53db62dd35ebea4</list_id>
+      <sys_id>270ee84dc3a34cf38621890048901fac</sys_id>
+      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
       <element>job_reference</element>
       <position>0</position>
     </sys_ui_list_element>
     <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>c5c62a3f394945cc8fb9d26bc6547781</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="x_1845356_circle_0_recycling_partner" relationship="NULL" sys_domain="global" view="Default view">19b7c0de44184d0aa53db62dd35ebea4</list_id>
-      <element>job_type</element>
+      <sys_id>fd4e67b579164a28be54f9af2df9d63f</sys_id>
+      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
+      <element>device_record</element>
       <position>1</position>
     </sys_ui_list_element>
     <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>f5493847978f4234826edaa4c64733c7</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="x_1845356_circle_0_recycling_partner" relationship="NULL" sys_domain="global" view="Default view">19b7c0de44184d0aa53db62dd35ebea4</list_id>
-      <element>status</element>
+      <sys_id>4063846142e948cf94c6533ffd16ee2f</sys_id>
+      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
+      <element>device_record.return_request</element>
       <position>2</position>
     </sys_ui_list_element>
     <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>a4fbe2536b604b8e96798b7167aa4ec4</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="x_1845356_circle_0_recycling_partner" relationship="NULL" sys_domain="global" view="Default view">19b7c0de44184d0aa53db62dd35ebea4</list_id>
-      <element>device_record</element>
+      <sys_id>2fab273be93446adb661644c4b039d83</sys_id>
+      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
+      <element>job_type</element>
       <position>3</position>
     </sys_ui_list_element>
     <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>90725621a0af477f98110881b3970d79</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="x_1845356_circle_0_recycling_partner" relationship="NULL" sys_domain="global" view="Default view">19b7c0de44184d0aa53db62dd35ebea4</list_id>
-      <element>completion_date</element>
+      <sys_id>6cd15506bb4c441ba2c8b1434f14b897</sys_id>
+      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
+      <element>status</element>
       <position>4</position>
     </sys_ui_list_element>
+    <sys_ui_list_element action="INSERT_OR_UPDATE">
+      <sys_id>84f87b024207411d853dfae86f24a465</sys_id>
+      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
+      <element>assigned_to</element>
+      <position>5</position>
+    </sys_ui_list_element>
+    <sys_ui_list_element action="INSERT_OR_UPDATE">
+      <sys_id>1a3517d4426c41eb9349a28908c4cce6</sys_id>
+      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
+      <element>completion_date</element>
+      <position>6</position>
+    </sys_ui_list_element>
     <sys_ui_list action="INSERT_OR_UPDATE">
-      <sys_id>19b7c0de44184d0aa53db62dd35ebea4</sys_id>
+      <sys_id>661d8ebfafd94aa0813a370c5d3051b0</sys_id>
       <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
       <view name="NULL">Default view</view>
       <name>x_1845356_circle_0_processing_job</name>
-      <parent>x_1845356_circle_0_recycling_partner</parent>
     </sys_ui_list>
   </sys_ui_list>
 </record_update>

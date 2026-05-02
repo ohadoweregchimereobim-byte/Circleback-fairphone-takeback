@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+  <sp_widget action="INSERT_OR_UPDATE">
+    <sys_id>d35d69d5a849458db2c108477335621f</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sp_widget_d35d69d5a849458db2c108477335621f</sys_update_name>
+    <category>custom</category>
+    <client_script><![CDATA[api.controller = function() {
+  var c = this;
+
+  c.submitting = false;
+
+  c.form = {
+    consumer_name: '',
+    consumer_email: '',
+    consumer_phone: '',
+    device_type: '',
+    device_model: '',
+    device_condition: '',
+    postal_address: '',
+    agreement: false
+  };
+
+  c.errors = {};
+
+  c.validate = function() {
+    c.errors = {};
+    if (!c.form.consumer_name) c.errors.consumer_name = 'Full name is required.';
+    if (!c.form.consumer_email) {
+      c.errors.consumer_email = 'Email address is required.';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.form.consumer_email)) {
+      c.errors.consumer_email = 'Please enter a valid email address.';
+    }
+    if (!c.form.device_type) c.errors.device_type = 'Please select a device type.';
+    if (!c.form.device_model) c.errors.device_model = 'Device model is required.';
+    if (!c.form.device_condition) c.errors.device_condition = 'Please select the device condition.';
+    if (!c.form.postal_address) c.errors.postal_address = 'Postal address is required.';
+    if (!c.form.agreement) c.errors.agreement = 'You must confirm the data backup agreement.';
+    return Object.keys(c.errors).length === 0;
+  };
+
+  c.submit = function() {
+    if (!c.validate()) return;
+    c.submitting = true;
+    c.server.get({
+      action: 'submit',
+      consumer_name: c.form.consumer_name,
+      consumer_email: c.form.consumer_email,
+      consumer_phone: c.form.consumer_phone,
+      device_type: c.form.device_type,
+      device_model: c.form.device_model,
+      device_condition: c.form.device_condition,
+      postal_address: c.form.postal_address
+    }).then(function(r) {
+      c.data = r.data;
+      c.submitting = false;
+    }, function() {
+      c.submitting = false;
+      c.data.submitted = true;
+      c.data.success = false;
+      c.data.message = 'A network error occurred. Please try again.';
+    });
+  };
+
+  c.hasError = function(field) {
+    return c.errors[field] ? true : false;
+  };
+};
+]]></client_script>
+    <controller_as>c</controller_as>
+    <css><![CDATA[/* Page header within widget */
+.cb-page-header {
+  margin-bottom: 32px;
+}
+.cb-page-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: $text-color;
+  margin: 0 0 8px;
+}
+.cb-title-icon {
+  color: $brand-primary;
+  margin-right: 8px;
+  font-size: 26px;
+}
+.cb-page-subtitle {
+  font-size: $font-size-base;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Form input styling */
+.sp-input {
+  height: $input-height-base;
+  border: 1px solid $border-tertiary;
+  border-radius: $border-radius-base;
+  padding: 0 12px;
+  font-size: $font-size-base;
+  color: $text-color;
+  background: $background-primary;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  width: 100%;
+  &:focus {
+    border-color: $brand-primary;
+    box-shadow: 0 0 0 3px rgba($brand-primary, 0.15);
+    outline: none;
+  }
+}
+.has-error .sp-input,
+.has-error .sp-select,
+.has-error .sp-textarea {
+  border-color: $brand-danger;
+}
+
+/* Select / dropdown */
+.sp-select-wrapper {
+  position: relative;
+}
+.sp-select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 36px;
+  height: $input-height-base;
+  border: 1px solid $border-tertiary;
+  border-radius: $border-radius-base;
+  cursor: pointer;
+  color: $text-color;
+  background: $background-primary;
+  &:focus {
+    border-color: $brand-primary;
+    box-shadow: 0 0 0 3px rgba($brand-primary, 0.15);
+    outline: none;
+  }
+}
+.sp-select-chevron {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $text-muted;
+  pointer-events: none;
+  font-size: 12px;
+}
+
+/* Textarea */
+.sp-textarea {
+  border-radius: $border-radius-base;
+  border: 1px solid $border-tertiary;
+  padding: 12px;
+  font-size: $font-size-base;
+  color: $text-color;
+  background: $background-primary;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.15s;
+  &:focus {
+    border-color: $brand-primary;
+    box-shadow: 0 0 0 3px rgba($brand-primary, 0.15);
+    outline: none;
+  }
+}
+
+/* Primary button */
+.sp-btn-primary {
+  height: 44px;
+  padding: 0 24px;
+  border-radius: $border-radius-base;
+  font-size: $font-size-base;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+  border: none;
+  background: $brand-primary;
+  color: $btn-primary-color;
+  &:hover:not(:disabled) {
+    background: $brand-primary-dark;
+    box-shadow: 0 2px 8px rgba($brand-primary, 0.3);
+    color: $btn-primary-color;
+  }
+  &:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+}
+
+/* Agreement checkbox */
+.cb-agreement label {
+  font-size: $font-size-base;
+  color: $text-color;
+  font-weight: 400;
+}
+
+/* Submit row */
+.cb-submit-row {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid $border-tertiary;
+}
+.cb-submit-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Confirmation screen */
+.cb-confirmation {
+  padding: 48px 24px;
+}
+.cb-success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: $brand-primary;
+  color: $btn-primary-color;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.cb-confirm-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: $text-color;
+  margin: 0 0 8px;
+}
+.cb-confirm-ref {
+  font-size: $font-size-base;
+  color: $text-muted;
+  margin-bottom: 8px;
+}
+.cb-ref-badge {
+  display: inline-block;
+  background: $background-secondary;
+  border: 2px solid $brand-primary;
+  border-radius: $border-radius-large;
+  padding: 12px 32px;
+  font-size: 22px;
+  font-weight: 700;
+  color: $brand-primary;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+.cb-confirm-msg {
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Spinner */
+@keyframes sp-spin {
+  to { transform: rotate(360deg); }
+}
+.sp-spin {
+  animation: sp-spin 0.8s linear infinite;
+}
+]]></css>
+    <data_table>sp_instance</data_table>
+    <demo_data/>
+    <description/>
+    <docs/>
+    <field_list/>
+    <has_preview>false</has_preview>
+    <id>cb_return_form</id>
+    <internal>false</internal>
+    <link>function link(scope, element, attrs, controller) {
+}</link>
+    <name>CircleBack Return Form</name>
+    <option_schema/>
+    <public>false</public>
+    <roles/>
+    <script><![CDATA[(function() {
+  data.submitted = false;
+  data.success = false;
+  data.message = '';
+  data.returnRef = '';
+
+  data.deviceTypes = [
+    { value: 'smartphone', label: 'Smartphone' },
+    { value: 'tablet', label: 'Tablet' },
+    { value: 'laptop', label: 'Laptop' },
+    { value: 'headphones', label: 'Headphones' },
+    { value: 'other', label: 'Other' }
+  ];
+
+  data.conditions = [
+    { value: 'working', label: 'Working - powers on normally' },
+    { value: 'minor_damage', label: 'Minor Damage - some wear but functional' },
+    { value: 'major_damage', label: 'Major Damage - does not power on' },
+    { value: 'unknown', label: 'Unknown' }
+  ];
+
+  if (input && input.action === 'submit') {
+    try {
+      var gr = new GlideRecord('x_1845356_circle_0_return_request');
+      gr.initialize();
+      gr.setValue('consumer_name', input.consumer_name);
+      gr.setValue('consumer_email', input.consumer_email);
+      if (input.consumer_phone) {
+        gr.setValue('consumer_phone', input.consumer_phone);
+      }
+      gr.setValue('device_type', input.device_type);
+      gr.setValue('device_model', input.device_model);
+      gr.setValue('device_condition', input.device_condition);
+      gr.setValue('postal_address', input.postal_address);
+      gr.setValue('status', 'submitted');
+
+      var sysId = gr.insert();
+
+      if (sysId) {
+        gr.get(sysId);
+        data.submitted = true;
+        data.success = true;
+        data.returnRef = gr.getValue('return_reference');
+        data.message = 'Your return request has been submitted successfully.';
+      } else {
+        data.submitted = true;
+        data.success = false;
+        data.message = 'We could not process your request. Please try again.';
+      }
+    } catch (e) {
+      gs.error('CircleBack return form error: ' + e.message);
+      data.submitted = true;
+      data.success = false;
+      data.message = 'An unexpected error occurred. Please try again later.';
+    }
+    return;
+  }
+})();
+]]></script>
+    <servicenow>false</servicenow>
+    <template><![CDATA[<!-- Success confirmation -->
+<div ng-if="c.data.submitted && c.data.success" class="text-center cb-confirmation">
+  <div class="cb-success-icon">
+    <span class="glyphicon glyphicon-ok"></span>
+  </div>
+  <h2 class="cb-confirm-title">Return Request Submitted</h2>
+  <p class="cb-confirm-ref">Your reference number is:</p>
+  <div class="cb-ref-badge">{{c.data.returnRef}}</div>
+  <p class="text-muted cb-confirm-msg">
+    {{c.data.message}}<br>
+    Please check your email for shipping instructions.
+  </p>
+</div>
+
+<!-- Error message -->
+<div ng-if="c.data.submitted && !c.data.success" class="text-center cb-confirmation">
+  <div class="alert alert-danger" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign"></span>
+    <strong>Submission Failed</strong> — {{c.data.message}}
+  </div>
+</div>
+
+<!-- Return form -->
+<div ng-if="!c.data.submitted">
+  <div class="text-center cb-page-header">
+    <h1 class="cb-page-title">
+      <span class="glyphicon glyphicon-phone-alt cb-title-icon"></span>
+      Return Your Device
+    </h1>
+    <p class="text-muted cb-page-subtitle">Return your old device. We will handle the rest.</p>
+  </div>
+  <form name="returnForm" novalidate>
+    <!-- Full Name -->
+    <div class="form-group" ng-class="{'has-error': c.hasError('consumer_name')}">
+      <label class="control-label" for="consumer_name">
+        Full Name <span class="text-danger">*</span>
+      </label>
+      <input type="text" class="form-control sp-input" id="consumer_name"
+             ng-model="c.form.consumer_name" placeholder="Your full name">
+      <span class="help-block" ng-if="c.errors.consumer_name">{{c.errors.consumer_name}}</span>
+    </div>
+
+    <!-- Email and Phone row -->
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="form-group" ng-class="{'has-error': c.hasError('consumer_email')}">
+          <label class="control-label" for="consumer_email">
+            Email Address <span class="text-danger">*</span>
+          </label>
+          <input type="email" class="form-control sp-input" id="consumer_email"
+                 ng-model="c.form.consumer_email" placeholder="you@example.com">
+          <span class="help-block" ng-if="c.errors.consumer_email">{{c.errors.consumer_email}}</span>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="form-group">
+          <label class="control-label" for="consumer_phone">Phone Number</label>
+          <input type="tel" class="form-control sp-input" id="consumer_phone"
+                 ng-model="c.form.consumer_phone" placeholder="Optional">
+        </div>
+      </div>
+    </div>
+
+    <!-- Device Type and Condition row -->
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="form-group" ng-class="{'has-error': c.hasError('device_type')}">
+          <label class="control-label" for="device_type">
+            Device Type <span class="text-danger">*</span>
+          </label>
+          <div class="sp-select-wrapper">
+            <select class="form-control sp-select" id="device_type"
+                    ng-model="c.form.device_type"
+                    ng-options="opt.value as opt.label for opt in c.data.deviceTypes">
+              <option value="">— Select device type —</option>
+            </select>
+            <span class="sp-select-chevron glyphicon glyphicon-chevron-down"></span>
+          </div>
+          <span class="help-block" ng-if="c.errors.device_type">{{c.errors.device_type}}</span>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="form-group" ng-class="{'has-error': c.hasError('device_condition')}">
+          <label class="control-label" for="device_condition">
+            Device Condition <span class="text-danger">*</span>
+          </label>
+          <div class="sp-select-wrapper">
+            <select class="form-control sp-select" id="device_condition"
+                    ng-model="c.form.device_condition"
+                    ng-options="opt.value as opt.label for opt in c.data.conditions">
+              <option value="">— Select condition —</option>
+            </select>
+            <span class="sp-select-chevron glyphicon glyphicon-chevron-down"></span>
+          </div>
+          <span class="help-block" ng-if="c.errors.device_condition">{{c.errors.device_condition}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Device Model -->
+    <div class="form-group" ng-class="{'has-error': c.hasError('device_model')}">
+      <label class="control-label" for="device_model">
+        Device Model <span class="text-danger">*</span>
+      </label>
+      <input type="text" class="form-control sp-input" id="device_model"
+             ng-model="c.form.device_model" placeholder="e.g. Fairphone 6, Fairphone 5">
+      <span class="help-block" ng-if="c.errors.device_model">{{c.errors.device_model}}</span>
+    </div>
+
+    <!-- Postal Address -->
+    <div class="form-group" ng-class="{'has-error': c.hasError('postal_address')}">
+      <label class="control-label" for="postal_address">
+        Postal Address <span class="text-danger">*</span>
+      </label>
+      <textarea class="form-control sp-textarea" id="postal_address"
+                ng-model="c.form.postal_address" rows="3"
+                placeholder="Your full postal address for shipping label"></textarea>
+      <span class="help-block" ng-if="c.errors.postal_address">{{c.errors.postal_address}}</span>
+    </div>
+
+    <!-- Agreement checkbox -->
+    <div class="form-group" ng-class="{'has-error': c.hasError('agreement')}">
+      <div class="checkbox cb-agreement">
+        <label>
+          <input type="checkbox" ng-model="c.form.agreement">
+          I confirm I have backed up my data and will remove my SIM card before sending
+        </label>
+      </div>
+      <span class="help-block" ng-if="c.errors.agreement">{{c.errors.agreement}}</span>
+    </div>
+
+    <!-- Submit button -->
+    <div class="cb-submit-row">
+      <button type="button" class="btn btn-primary sp-btn-primary cb-submit-btn"
+              ng-click="c.submit()" ng-disabled="c.submitting">
+        <span class="glyphicon glyphicon-share-alt" ng-if="!c.submitting"></span>
+        <span class="glyphicon glyphicon-refresh" ng-class="{'sp-spin': c.submitting}" ng-if="c.submitting"></span>
+        {{c.submitting ? 'Submitting...' : 'Submit Return Request'}}
+      </button>
+    </div>
+  </form>
+</div>
+]]></template>
+  </sp_widget>
+</record_update>

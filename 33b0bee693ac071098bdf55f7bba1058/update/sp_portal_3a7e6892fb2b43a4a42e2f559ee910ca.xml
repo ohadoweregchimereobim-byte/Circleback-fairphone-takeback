@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+  <sp_portal action="INSERT_OR_UPDATE">
+    <sys_id>3a7e6892fb2b43a4a42e2f559ee910ca</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sp_portal_3a7e6892fb2b43a4a42e2f559ee910ca</sys_update_name>
+    <alternate_portal/>
+    <communication_channels/>
+    <css_variables/>
+    <dark_theme/>
+    <default>false</default>
+    <embeddable_macroponents/>
+    <enable_ais>false</enable_ais>
+    <enable_certificate_based_authentication>false</enable_certificate_based_authentication>
+    <enable_embeddables>false</enable_embeddables>
+    <enable_favorites>false</enable_favorites>
+    <hide_portal_name>false</hide_portal_name>
+    <homepage id="cb_return">31f4dfe3a2d84308b16149f7e0366304</homepage>
+    <icon/>
+    <inactive>false</inactive>
+    <kb_knowledge_base/>
+    <kb_knowledge_page/>
+    <login_page>6995a144cb11120000f8d856634c9c25</login_page>
+    <logo/>
+    <logo_alt_text/>
+    <notfound_page>3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+    <quick_start_config/>
+    <rtl_enabled>false</rtl_enabled>
+    <sc_catalog/>
+    <sc_catalog_page/>
+    <sc_category_page/>
+    <search_application/>
+    <search_results_configuration/>
+    <sp_chat_queue/>
+    <sp_rectangle_menu/>
+    <theme>c893755cd65849f295357292ee65e6f8</theme>
+    <title>CircleBack by Fairphone</title>
+    <ts_index_group/>
+    <url_suffix>circleback</url_suffix>
+  </sp_portal>
+</record_update>
