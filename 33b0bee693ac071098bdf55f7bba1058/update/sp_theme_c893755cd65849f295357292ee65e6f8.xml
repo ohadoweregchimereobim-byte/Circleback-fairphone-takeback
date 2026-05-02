@@ -3,8 +3,7 @@
     <sys_id>c893755cd65849f295357292ee65e6f8</sys_id>
     <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
     <sys_update_name>sp_theme_c893755cd65849f295357292ee65e6f8</sys_update_name>
-    <css_variables>
-    // ── Brand (Fairphone Green #2E7D32) ──
+    <css_variables>// ── Brand (Fairphone Green #2E7D32) ──
     $brand-primary:         #2E7D32 !default;
     $brand-primary-dark:    #1B5E20 !default;
     $brand-primary-darker:  #0D3B13 !default;
@@ -58,8 +57,7 @@
     $panel-border-color: $border-tertiary !default;
     $input-border: sp-rgb(--now-color_border--primary, #737F84) !default;
     $input-border-focus: #2E7D32 !default;
-    $sp-page-bg: sp-rgb(--now-color_background--secondary, #F5F6F7);
-  </css_variables>
+    $sp-page-bg: sp-rgb(--now-color_background--secondary, #F5F6F7);</css_variables>
     <footer/>
     <footer_fixed>true</footer_fixed>
     <header>bf5ec2f2cb10120000f8d856634c9c0c</header>
