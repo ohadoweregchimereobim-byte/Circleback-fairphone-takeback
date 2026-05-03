@@ -22,112 +22,127 @@ CircleBack is that system.
 
 ---
 
+## Screenshots
+
+### Consumer Portal with Live Impact Counter
+![Consumer Portal](https://raw.githubusercontent.com/ohadoweregchimereobim-byte/Circleback-fairphone-takeback/main/screenshots/Consumer%20Portal.png)
+
+### Status Tracker — Complete Journey
+![Status Tracker](https://raw.githubusercontent.com/ohadoweregchimereobim-byte/Circleback-fairphone-takeback/main/screenshots/Status%20Tracker%20-%20Complete%20Journey.png)
+
+### Programme Dashboard with ESG Metrics
+![Dashboard](https://raw.githubusercontent.com/ohadoweregchimereobim-byte/Circleback-fairphone-takeback/main/screenshots/Programme%20Dashboard%20with%20ESG%20Metrics.png)
+
+### Return Requests List
+![Return Requests](https://raw.githubusercontent.com/ohadoweregchimereobim-byte/Circleback-fairphone-takeback/main/screenshots/Return%20Requests%20List.png)
+
+---
+
 ## What It Does
 
 ### Consumer Side
-- Submit a device return request through a clean, 
+- Submit a device return request through a clean 
   mobile-friendly portal
 - Receive an automated confirmation email with a 
-  unique reference number
+  unique reference number (CB-XXXX format)
 - Track the return in real time through a visual 
-  progress indicator
-- Get notified when the reward is ready
+  progress indicator showing four stages
+- Get notified by email when the reward is ready
 
 ### Operational Side
-- Intake Technician workspace with filtered queues 
-  for expected devices and devices awaiting triage
-- Automated triage routing — set a decision and 
-  a Processing Job is created automatically
+- Intake Technician workspace with two filtered 
+  queues — devices expected and devices awaiting 
+  triage
+- Automated triage routing — technician sets a 
+  decision and a Processing Job is created 
+  automatically
 - Recycling Partner management with certification 
-  tracking
-- Reward fulfilment automation — job completes, 
-  gift card issues, consumer gets notified
+  tracking (R2v3, e-Stewards, ISO 14001)
+- Reward fulfilment automation — Processing Job 
+  completes, gift card issues, consumer gets 
+  notified
 
 ### Management Side
 - Programme Dashboard with live operational metrics
 - ESG Impact section tracking devices diverted 
   from landfill, weight processed, and materials 
   recovered
-
----
-
-## Screenshots
-
-### Consumer Portal
-![Consumer Portal](screenshots/01-consumer-portal-impact-counter.png)
-
-### Status Tracker — Complete Journey
-![Status Tracker](screenshots/Status-Tracker-Complete Journey.png)
-
-### Programme Dashboard with ESG Metrics
-![Dashboard](screenshots/03-programme-dashboard-esg.png)
-
-### Return Requests List
-![Return Requests](screenshots/04-return-requests-list.png)
+- Returns by Status donut chart
+- Processing Jobs by Type bar chart
 
 ---
 
 ## Application Architecture
 
-**Platform:** ServiceNow (Zurich release)  
+**Platform:** ServiceNow Zurich  
 **Scope:** x_1845356_circle_0  
-**Built with:** Build Agent (17 structured prompts)
+**Built with:** ServiceNow Build Agent (17 prompts)  
+**Portal:** https://dev395191.service-now.com/circleback
 
 ### Tables
-- Return Request — consumer submissions
-- Device Record — physical device intake
-- Processing Job — refurbish, parts harvest, recycle
-- Recycling Partner — certified recycler management
-- Reward Fulfilment — gift card issuance and tracking
+
+| Table | Purpose |
+|---|---|
+| Return Request | Consumer device submissions |
+| Device Record | Physical device intake and triage |
+| Processing Job | Refurbish, parts harvest, or recycle work |
+| Recycling Partner | Certified recycler management |
+| Reward Fulfilment | Gift card issuance and tracking |
 
 ### Automation
-- Business Rule: Triage Router — auto-creates 
-  Processing Jobs on triage decision
-- Business Rule: Submission Date — fixes scoped 
-  datetime on record creation
-- Flow: Return Confirmation Email — sends branded 
-  confirmation and advances status
-- Flow: Reward Fulfilment Trigger — issues reward 
-  on job completion
 
-### Portal
-- Service Portal with two pages: Return Your Device 
-  and Track Your Return
-- Live impact counter showing real programme metrics
+| Component | Type | What It Does |
+|---|---|---|
+| CircleBack Triage Router | Business Rule | Creates Processing Job on triage decision |
+| CircleBack Set Submission Date | Business Rule | Fixes scoped datetime on record creation |
+| CircleBack Return Confirmation Email | Flow | Sends confirmation email, advances status |
+| CircleBack Reward Fulfilment Trigger | Flow | Issues reward on job completion |
+
+### Portal Pages
+
+| Page | Purpose |
+|---|---|
+| Return Your Device | Consumer return submission form |
+| Track Your Return | Real time status tracker |
 
 ---
 
 ## How It Was Built
 
 The domain expertise came from academic research 
-on e-waste management in consumer electronics 
-comparing Apple, Fairphone, and Dell for an MSc 
-Engineering Management module at the University 
-of South Wales.
+comparing how Apple, Fairphone, and Dell manage 
+e-waste for an MSc Engineering Management module 
+at the University of South Wales.
 
-Every Build Agent prompt was designed for a specific 
-component with a role context header. The full 
-prompt set is in the build-agent-prompts folder.
+The single biggest operational gap identified 
+across all three companies was reverse logistics — 
+the absence of a unified workflow system managing 
+consumer device returns from submission through 
+triage, processing, and reward fulfilment. 
+CircleBack closes that gap.
+
+Every Build Agent prompt was written for a specific 
+component with a role context header to maximise 
+output quality. The full prompt set is in the 
+build-agent-prompts folder.
 
 ---
 
-## Build Agent Prompts
+## Background
 
-See [build-agent-prompts/prompts.md](build-agent-prompts/prompts.md) 
-for the full set of structured prompts used to 
-build this application.
+This project sits at the intersection of two things 
+I have been working on simultaneously — my MSc 
+Engineering Management dissertation on supply chain 
+resilience, and my ServiceNow certification journey 
+through the RiseUp with ServiceNow programme.
 
----
-
-## Live Application
-
-Built on a ServiceNow Personal Developer Instance.  
-Portal URL: https://dev395191.service-now.com/circleback
+CircleBack is what happens when academic research 
+meets a real platform and a deadline.
 
 ---
 
 ## Tags
 
-ServiceNow · Build Agent · E-Waste · Circular Economy · 
-Fairphone · MSc Engineering Management · 
-#BuildMoreWithBuildAgent
+`ServiceNow` `Build Agent` `E-Waste` `Circular Economy` 
+`Fairphone` `MSc Engineering Management` 
+`RiseUp with ServiceNow` `#BuildMoreWithBuildAgent`
