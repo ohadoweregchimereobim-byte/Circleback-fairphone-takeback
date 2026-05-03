@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set field="status" table="x_1845356_circle_0_reward_fulfilment">
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>aa9305b001c341498896deb9e907d2e2</sys_id>
+      <name>x_1845356_circle_0_reward_fulfilment</name>
+      <element>status</element>
+      <label>Issued</label>
+      <value>issued</value>
+      <sequence>0</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>6a36f13ced7944c3a2e00c59292411dd</sys_id>
+      <name>x_1845356_circle_0_reward_fulfilment</name>
+      <element>status</element>
+      <label>Redeemed</label>
+      <value>redeemed</value>
+      <sequence>1</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>a1140af68778497191531f7f909938c3</sys_id>
+      <name>x_1845356_circle_0_reward_fulfilment</name>
+      <element>status</element>
+      <label>Expired</label>
+      <value>expired</value>
+      <sequence>2</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>641cf859cb9c4fde86403b16faf6d41e</sys_id>
+      <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+      <name>x_1845356_circle_0_reward_fulfilment</name>
+      <element>status</element>
+    </sys_choice_set>
+  </sys_choice_set>
+</record_update>
