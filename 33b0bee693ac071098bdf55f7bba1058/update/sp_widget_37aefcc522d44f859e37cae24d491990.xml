@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+  <sp_widget action="INSERT_OR_UPDATE">
+    <sys_id>37aefcc522d44f859e37cae24d491990</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sp_widget_37aefcc522d44f859e37cae24d491990</sys_update_name>
+    <category>custom</category>
+    <client_script><![CDATA[api.controller = function () {
+  var c = this;
+
+  c.formatNumber = function (num) {
+    if (typeof num !== 'number') return '0';
+    if (num % 1 !== 0) return num.toFixed(1);
+    return num.toLocaleString();
+  };
+};
+]]></client_script>
+    <controller_as>c</controller_as>
+    <css><![CDATA[/* CircleBack Impact Counter Widget */
+
+.cb-impact {
+  text-align: center;
+  padding: 8px 0 0;
+}
+
+/* Stat card */
+.cb-impact-card {
+  background: $brand-primary-lighter;
+  border-radius: $border-radius-large;
+  padding: 24px 16px 20px;
+  margin-bottom: 16px;
+  border: 1px solid $brand-primary-light;
+  transition: transform 0.2s, box-shadow 0.2s;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba($brand-primary, 0.15);
+  }
+}
+
+/* Emoji icon */
+.cb-impact-icon {
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+/* Large bold green number */
+.cb-impact-value {
+  font-size: 36px;
+  font-weight: 800;
+  color: $brand-primary;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+/* Small label underneath */
+.cb-impact-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: $brand-primary-dark;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 6px;
+}
+
+/* Caption below the cards */
+.cb-impact-caption {
+  font-size: $font-size-base;
+  color: $text-muted;
+  font-style: italic;
+  margin: 8px 0 0;
+  padding-bottom: 0;
+}
+]]></css>
+    <data_table>sp_instance</data_table>
+    <demo_data/>
+    <description/>
+    <docs/>
+    <field_list/>
+    <has_preview>false</has_preview>
+    <id>cb_impact_counter</id>
+    <internal>false</internal>
+    <link>function link(scope, element, attrs, controller) {
+}</link>
+    <name>CircleBack Impact Counter</name>
+    <option_schema/>
+    <public>false</public>
+    <roles/>
+    <script><![CDATA[(function () {
+  data.devicesReturned = 0;
+  data.kgDiverted = 0;
+  data.rewardsIssued = 0;
+
+  try {
+    // Counter 1: Return Requests with status = complete
+    var grReturns = new GlideAggregate('x_1845356_circle_0_return_request');
+    grReturns.addQuery('status', 'complete');
+    grReturns.addAggregate('COUNT');
+    grReturns.query();
+    if (grReturns.next()) {
+      data.devicesReturned = parseInt(grReturns.getAggregate('COUNT'), 10) || 0;
+    }
+
+    // Counter 2: Sum of weight_kg from all Device Records
+    var grWeight = new GlideAggregate('x_1845356_circle_0_device_record');
+    grWeight.addAggregate('SUM', 'weight_kg');
+    grWeight.query();
+    if (grWeight.next()) {
+      data.kgDiverted = parseFloat(grWeight.getAggregate('SUM', 'weight_kg')) || 0;
+    }
+
+    // Counter 3: Reward Fulfilment records where status = issued or redeemed
+    var grRewards = new GlideAggregate('x_1845356_circle_0_reward_fulfilment');
+    grRewards.addQuery('status', 'IN', 'issued,redeemed');
+    grRewards.addAggregate('COUNT');
+    grRewards.query();
+    if (grRewards.next()) {
+      data.rewardsIssued = parseInt(grRewards.getAggregate('COUNT'), 10) || 0;
+    }
+  } catch (e) {
+    gs.error('CircleBack Impact Counter error: ' + e.message);
+  }
+})();
+]]></script>
+    <servicenow>false</servicenow>
+    <template><![CDATA[<div class="cb-impact">
+  <div class="row">
+    <!-- Counter 1: Devices Returned -->
+    <div class="col-sm-4 col-xs-12">
+      <div class="cb-impact-card">
+        <div class="cb-impact-icon">&#9851;</div>
+        <div class="cb-impact-value">{{c.formatNumber(c.data.devicesReturned)}}</div>
+        <div class="cb-impact-label">Devices Returned</div>
+      </div>
+    </div>
+
+    <!-- Counter 2: KG Diverted from Landfill -->
+    <div class="col-sm-4 col-xs-12">
+      <div class="cb-impact-card">
+        <div class="cb-impact-icon">&#9878;</div>
+        <div class="cb-impact-value">{{c.formatNumber(c.data.kgDiverted)}}</div>
+        <div class="cb-impact-label">KG Diverted from Landfill</div>
+      </div>
+    </div>
+
+    <!-- Counter 3: Rewards Issued -->
+    <div class="col-sm-4 col-xs-12">
+      <div class="cb-impact-card">
+        <div class="cb-impact-icon">&#127873;</div>
+        <div class="cb-impact-value">{{c.formatNumber(c.data.rewardsIssued)}}</div>
+        <div class="cb-impact-label">Rewards Issued</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="cb-impact-caption">Together we are closing the loop on e-waste.</p>
+</div>
+]]></template>
+  </sp_widget>
+</record_update>

@@ -254,7 +254,8 @@
 }
 .sp-spin {
   animation: sp-spin 0.8s linear infinite;
-}]]></css>
+}
+]]></css>
     <data_table>sp_instance</data_table>
     <demo_data/>
     <description/>
@@ -263,8 +264,8 @@
     <has_preview>false</has_preview>
     <id>cb_return_form</id>
     <internal>false</internal>
-    <link><![CDATA[function link(scope, element, attrs, controller) {
-}]]></link>
+    <link>function link(scope, element, attrs, controller) {
+}</link>
     <name>CircleBack Return Form</name>
     <option_schema/>
     <public>false</public>
