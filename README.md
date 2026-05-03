@@ -1,4 +1,4 @@
-# CircleBack — Fairphone Take-Back Hub
+# CircleBack - Fairphone Take-Back Hub
 
 A ServiceNow application that manages Fairphone's 
 consumer electronics take-back programme end to end.
