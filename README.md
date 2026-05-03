@@ -74,7 +74,7 @@ CircleBack is that system.
 
 ## Application Architecture
 
-**Platform:** ServiceNow Zurich  
+**Platform:** ServiceNow Australia  
 **Scope:** x_1845356_circle_0  
 **Built with:** ServiceNow Build Agent (17 prompts)  
 **Portal:** https://dev395191.service-now.com/circleback
