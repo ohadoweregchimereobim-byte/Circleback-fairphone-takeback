@@ -12,7 +12,7 @@
     <choice_field/>
     <choice_table/>
     <column_label>Submission Date</column_label>
-    <default_value>javascript:gs.nowDateTime();</default_value>
+    <default_value/>
     <dependent/>
     <dependent_on_field/>
     <display>false</display>

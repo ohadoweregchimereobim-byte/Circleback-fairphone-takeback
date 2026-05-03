@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>timeFromCreateToActivate=0</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Sends a confirmation email to the consumer after a Return Request is submitted, then updates status to Shipping Label Sent.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source>fluent</generation_source>
+        <internal_name>circleback_return_confirmation_email</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛x_1845356_circle_0_return_request Record","type":"reference","base_type":"reference","usedInstances":{"db08d50f-74fe-4d21-9696-ee982b7fb5ae":["record"],"720b7801-bbe9-49fc-a18b-17ac1c379593":["record"],"cdf5fc11-0d91-4868-91e0-90ae385193fb":["record"]},"attributes":{}},{"name":"Created_1.current.consumer_email","label":"Trigger - Record Created➛x_1845356_circle_0_return_request Record➛Consumer Email","type":"string","base_type":"string","usedInstances":{"720b7801-bbe9-49fc-a18b-17ac1c379593":["ah_to"]},"attributes":{}}]</label_cache>
+        <master_snapshot>44d5fdb693e4871098bdf55f7bba10a2</master_snapshot>
+        <master_snapshot_digest/>
+        <name>CircleBack Return Confirmation Email</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>1cd5fdb693e4871098bdf55f7bba10fa</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>673439d8393f453285f27f03008bc530</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CircleBack Return Confirmation Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name>sys_hub_flow_673439d8393f453285f27f03008bc530</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:44</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=673439d8393f453285f27f03008bc530"/>
+    <sys_variable_value action="delete_multiple" query="document_key=673439d8393f453285f27f03008bc530"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1845356_circle_0_return_request">status=submitted<item display_value="Submitted" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="submitted"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1cd5fdb693e4871098bdf55f7bba10fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:44</sys_updated_on>
+        <table>x_1845356_circle_0_return_request</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>673439d8393f453285f27f03008bc530</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:44</sys_created_on>
+        <sys_id>d0d5fdb693e4871098bdf55f7bba10fc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:44</sys_updated_on>
+        <trigger display_value="">1cd5fdb693e4871098bdf55f7bba10fa</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=673439d8393f453285f27f03008bc530^sys_idNOT INd0d5fdb693e4871098bdf55f7bba10fc"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=673439d8393f453285f27f03008bc530"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=673439d8393f453285f27f03008bc530"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=673439d8393f453285f27f03008bc530^sys_idNOT IN08d5fdb693e4871098bdf55f7bba1088,88d5fdb693e4871098bdf55f7bba104e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CircleBack Return Confirmation Email">673439d8393f453285f27f03008bc530</model>
+        <model_id>673439d8393f453285f27f03008bc530</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_673439d8393f453285f27f03008bc530</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>08d5fdb693e4871098bdf55f7bba1088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=08d5fdb693e4871098bdf55f7bba1088"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CircleBack Return Confirmation Email">673439d8393f453285f27f03008bc530</model>
+        <model_id>673439d8393f453285f27f03008bc530</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_673439d8393f453285f27f03008bc530</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:42</sys_created_on>
+        <sys_id>88d5fdb693e4871098bdf55f7bba104e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=88d5fdb693e4871098bdf55f7bba104e"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=673439d8393f453285f27f03008bc530"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=673439d8393f453285f27f03008bc530"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=673439d8393f453285f27f03008bc530^sys_idNOT IN5cb0321026034ac7ab2c9f6133feb91d"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CircleBack Return Confirmation Email">673439d8393f453285f27f03008bc530</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:39</sys_created_on>
+        <sys_id>5cb0321026034ac7ab2c9f6133feb91d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:39</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAAA71WUWvbMBD+K0JPG3jQsnWMwB62dYNAt8Larg+lCMU6J2LKKZPOSU3Jfx9y7FR2nCYhbp+MT9Ldd999p9PdIyenx2NwQ/QkMYWrwg8VH3CecCNHYPiAX8uRAZ5wjQQOpbkuZsAHnIJZoJyGNQUzQAVIq6PpxOoULrQnPri7T/hUopJkXcEH5HJIuHUKHB+cnpwkvHRR+eMJn0uTh/8Hcfrpw9n7s48i1S41IE6EA8odCgf/cvAUwmo/M7L4c/iRHxpMladPnZ7Rl5T0HPggk8ZDyEAb5QBX+GfSySlQgPzIqSP/Vg5N6pbLZB+ef+fILpF9f6BApWLlYb9J/IrcHaQ/8qxmJTDOE55dRHEssjR3DpCYRMWgjkl1zGw4lWNYOc6uwEBKoNbsZDc+/vupvdc4rgwh23Xw0rIZ3RQxhJq2Y4I2VVZt6pCZy1FYFHXGkeBqqC1RtczHC2ddv62IdipCEjk9ygl88CvVPEhK1bVeHiC42wkguwLvtQ1fokDp0ZIbWZq0i55Zx75amrBh8C1L1krx/bL4LrZVaPpUIVoU+ilEDO0yaLHGtwVKj0j2QXHjwbH+YRzSIYsJoPBrOcybdW11SNP6Mg3SArSHhPvrkczYBRvi8W0hsdjoiuBbI5NYsNQiwQP1qLaRTP+Onc1RbYv7tIO9UZDJ3NDbPq9/6+B5AM0dryTvEFxojJUdM9XWd8fay6j8CVe3/vrR9DeLStPqQmkrul7yBz3qtrOdRrFqrj1Jyv1nn4+mmgg6GN++owfe4xQ7UHax1OR9IZG8ICukUiJyt35qTa0Ccx6xV9VEaJzl5Pky4lZYjB6OuQcR0R78HTrMy+nR2yTvurKsK6+r3IPr8aqwCMJmnUNRZ6wiABQbFYwmwDJrjF1oHJc4+n0shKK0wZxbhpaYexU4B4/qELRjXq+q12quhvEFp3UL0y6h9vymLb2Xet7ogbHRCoRZrfVxyTVTrhzXNdgswP7slz6iLHdXo5Hbc/CeJWxnLe7/A6v8dDw6EAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=673439d8393f453285f27f03008bc530^sys_idNOT IN720b7801bbe949fca18b17ac1c379593,cdf5fc110d91486891e090ae385193fb,db08d50f74fe4d219696ee982b7fb5ae"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="">c1806bf4a70323008299b39f087901cb</action_type_parent>
+        <attributes/>
+        <comment>Send return confirmation email to consumer</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CircleBack Return Confirmation Email">673439d8393f453285f27f03008bc530</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:39</sys_created_on>
+        <sys_id>720b7801bbe949fca18b17ac1c379593</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:39</sys_updated_on>
+        <ui_id>720b7801-bbe9-49fc-a18b-17ac1c379593</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAAA+1YbW/bNhD+KzcV26fY8kuTpYqaoku3TxsadMGKYRkMijxZnCmSO1KJtSD/faDebMdJ4e7rbMOwRIl3z/Pc8XjgHw+RZiVGSeRZpnDR3JxEd0xVYXC9mJ6/Pp2fni24JK5wMVkQ+or0gvDvCp2PTiIhnVWs/u0rpjhO0vr33Ms7jJKcKYcnkWXESvRIUfIQ+do+AfX4eDJgvWceqWS0WmDJpNoA7kztQuoGD3aaGaOQ6R2PrFi4KvsLud9S56oh+APjK8hq+IlJsoXRCCP41DCGTy1juDI6l1Si2JfrP9k4mIrzJPXyKZPMiHqLRirkHThfK3x7G+VG+1HOSqnqBN6TZOoEHNNu5JBkfgElW4/upfBFAmeTiV2HEVpKncAEWOXNBVgmhNTLBGbh8W10easBdnxkjK+WZCotRtwoQwm8mv34/Yf57OlkyAwJpBExISuXwLldN78JTHrDAGkxHSz35vLms4XtAhpiTv6DCcxmLbAXtE/jYtqCjoW824e/wfh6gzGBqV2DM0oKeIWT8B3ge2MT0EbjHqEJTHpS24Rme4R6fVpCrcVGg99NRU9TRbpNtnyTxsWsN2wvbwqmV1CbCnJDwAtjnNRL8AYIec0VhmcEAu8kR7iXvoCNSuM0tr2pZmUOMLuMmE4m3w4cuVGKWYcJ9FebeEzPQhQ3lINBGq7DndiXO4jUhvEe5bLwCWRGicFfZrw35XNxuI0uB4VyJNQckzT24iCHh1hvgtBWOaDeRQiD0ZBLhTvO0nigmsaNjEPc53txn8/nwcHngnkomLWoHWhc+3dpXMz7eUbtzTs9Pb0AJTWOik6r6fh8R28lL1Pnyejl5a+FtDakwc8sQ5WkcTcO78ESWiYFuP4VFV6Be6kUZAgOtQ/JExLKFYa8qsdprOSzbq7DQvuOlfYCgsctP9eK8d3Mc8grQlWD1MAgM2tgWgDznvECfIEtjpd9fSBj4WOebzm5YStsplrGV2yJHW4CjYzCsrHGeabAITUQrJHav+zhM7YWrxghmLyx/Amd3/L4sSLwyAstuWTataox59C55vWOa2BmyfAwLD0QOmu0k9mulmls1LCOh3hv14O+3t5QELphSmZJwazJW6pdjjIPTNfgZRkWgt2Uh5RBQZi/vY0K761L4ljg3fzN6fTNdNzpMtLmfsxNGbfbe6jl76R4y7OFD35vowFbt9MlIHWTiZkyfHUBX6j+T8v3sBKnM7vuyq3HtR8J5IaYl0a/UFjPnq8Vgzq/1F3RTGN2uSVBQZtdqqvrO/YboZ+p9H1hCxibwgbxfrB6eufn5zv70bTbj24K6ULVYLrZSkvmUUDT4UBOpoQX9qsxXCtkDkEY0CYkkFU1CEnIvapDmvtguETn2BKHIt7vbu3/fmdybAuObcGxLTi2Bce24NgWHNuC/29bcPBhQ+FLtXPUQCEcYuuk4eHhijDAX0zHvCJC7R8f9zuPl147GIkwvCpR+4UUT88+vPkynjE32lUlUnu0dCC852Z9/SHNn/8CZ+ZiwY4TAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=720b7801bbe949fca18b17ac1c379593"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="">f9d01dd2c31332002841b63b12d3aea1</action_type_parent>
+        <attributes/>
+        <comment>Update Return Request status to Shipping Label Sent</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CircleBack Return Confirmation Email">673439d8393f453285f27f03008bc530</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:39</sys_created_on>
+        <sys_id>cdf5fc110d91486891e090ae385193fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:39</sys_updated_on>
+        <ui_id>cdf5fc11-0d91-4868-91e0-90ae385193fb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAAA5XQwUpDMRAF0H+Z9UNatEUeuBDxA7pxU+owTa4ayEvjZFIsj/y7tAWpFrEu73AHDnc5UpIB1JPJOoIPoaOtxLo/fvD09mZ2PZuzC+oieMIKq5pY8V5RjDryoeQou6d/vBSnIdu9s7AF9S8SCzrKojLAoNSPZLv8A9Va92VVuI36E+c4PijE4Hl65aoqkrV2bvutdrHHb1wdkIyD/wY6OMoJqJhYLXflLeQc0itHWSNyQbLnx8U57K/65YNhyFEMfIS0tvoEtkoRneIBAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cdf5fc110d91486891e090ae385193fb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="">89ce8a4187120010663ca1bb36cb0be3</action_type_parent>
+        <attributes/>
+        <comment>Wait 30 seconds before sending confirmation email</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CircleBack Return Confirmation Email">673439d8393f453285f27f03008bc530</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:39</sys_created_on>
+        <sys_id>db08d50f74fe4d219696ee982b7fb5ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:39</sys_updated_on>
+        <ui_id>db08d50f-74fe-4d21-9696-ee982b7fb5ae</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAAA43SzUrEMBAH8FeROXclZV0/CnsQ38GLSJhNZpdAmtTJZLGUvLtUhbauSo/JzDA//snLAAFbggbEtRSzaJsZxcUAFZzR57FUP9ypjao3qr5SqlGq2SqowLrUeeyf/21Khl0nj0bcmaA5ok9UQYeMLQkxNANI343jJ+8sTctLqSYZHjzpz8Nketf1/c1uu7vVxrHxpJVmksxBM71lSnIpXDOy2jtDLazfKR49niatcKafnK+71fsOMXrCZTBMJrKdhTIMT0woZHV9bTIzBSnlMoi/2lZjbDS5pSDa2QXIxGDd+H5phkp90s7uf/kys8rq1bMVpbx+AM/3mme/AgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=db08d50f74fe4d219696ee982b7fb5ae"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=673439d8393f453285f27f03008bc530"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=673439d8393f453285f27f03008bc530"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=673439d8393f453285f27f03008bc530"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=673439d8393f453285f27f03008bc530"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_673439d8393f453285f27f03008bc530</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>84d5fdb693e4871098bdf55f7bba1083</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_673439d8393f453285f27f03008bc530</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>ccd5fdb693e4871098bdf55f7bba108e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_673439d8393f453285f27f03008bc530"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_673439d8393f453285f27f03008bc530"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version>-1</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Sends a confirmation email to the consumer after a Return Request is submitted, then updates status to Shipping Label Sent.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>circleback_return_confirmation_email</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛x_1845356_circle_0_return_request Record","type":"reference","base_type":"reference","usedInstances":{"db08d50f-74fe-4d21-9696-ee982b7fb5ae":["record"],"720b7801-bbe9-49fc-a18b-17ac1c379593":["record"],"cdf5fc11-0d91-4868-91e0-90ae385193fb":["record"]},"attributes":{}},{"name":"Created_1.current.consumer_email","label":"Trigger - Record Created➛x_1845356_circle_0_return_request Record➛Consumer Email","type":"string","base_type":"string","usedInstances":{"720b7801-bbe9-49fc-a18b-17ac1c379593":["ah_to"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>CircleBack Return Confirmation Email</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="CircleBack Return Confirmation Email">673439d8393f453285f27f03008bc530</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>44d5fdb693e4871098bdf55f7bba10a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=44d5fdb693e4871098bdf55f7bba10a2^sys_idNOT IN80d5fdb693e4871098bdf55f7bba10a5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>44d5fdb693e4871098bdf55f7bba10a2</id>
+        <name>CircleBack Return Confirmation Email</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>80d5fdb693e4871098bdf55f7bba10a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=80d5fdb693e4871098bdf55f7bba10a5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=44d5fdb693e4871098bdf55f7bba10a2^sys_idNOT IN44d5fdb693e4871098bdf55f7bba10a8,c4d5fdb693e4871098bdf55f7bba10b6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CircleBack Return Confirmation Email">44d5fdb693e4871098bdf55f7bba10a2</model>
+        <model_id>44d5fdb693e4871098bdf55f7bba10a2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_44d5fdb693e4871098bdf55f7bba10a2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>44d5fdb693e4871098bdf55f7bba10a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=44d5fdb693e4871098bdf55f7bba10a8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CircleBack Return Confirmation Email">44d5fdb693e4871098bdf55f7bba10a2</model>
+        <model_id>44d5fdb693e4871098bdf55f7bba10a2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_44d5fdb693e4871098bdf55f7bba10a2</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>c4d5fdb693e4871098bdf55f7bba10b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c4d5fdb693e4871098bdf55f7bba10b6"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=44d5fdb693e4871098bdf55f7bba10a2^sys_idNOT IN1cd5fdb693e4871098bdf55f7bba10db"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CircleBack Return Confirmation Email">44d5fdb693e4871098bdf55f7bba10a2</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>1cd5fdb693e4871098bdf55f7bba10db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+1X32/TMBD+V6w8gVSkTmMI7Q0YkyYNJm0DHsYUufGltXDtYl/ahWn/O+f8aL002bqtAYT21Prs+L67+z77fHEdoZXjMdgj7ZDrBM5ydySi/SgaRIqPQNHfcz5SQGOpEazm6jyfAZnRm2PNp35OwAy0AI3lp8nEyASOpaPxxeUgmnItOBqbR/toMxhEqTXTc5jOFEfaK+XKkdFYATba3xkOB1Gxb+WENpxzlfnxVbzz9vXe7t6bOJE2If/D2AJmVtPPzwzIH2GRjvbNvz7gk2QilbCgS7Qzbsk7eizXa1loAMOWZFRxUBRwhT4tYhlikIjKYoGLE63yYMmVk7+g+D5zEAeprVakZxOzOIUUCHECh1IX7qpJZRKuliOOVN9RhuAolpubZXIOJaiqzC6xcobvEpTzuhQ3g014cZppdqLZxypGVmTIrROlJMM9JLmmqHw5yFUReVqXz/OFFqfHgVejWZJZih4Z5ZPVWWZYI0iPpnwMpRvaV0GCQRHSLy4cfZLOST0OYu+AUsyvY1F5CKgmxlMgXLYRZVPJ2EzHRsdL6q3EU+NvCKQ2byCCzpJ3+sYGB/5VbURczD3PRU25HsTybQKanQGV2vhfRF/yLctlZHDSpGhqLHtPdnbkPfECfCGcz0a/Cm0Vtv4UpIkccuUwBOrrzGq0HcB6w7UJJtrasu2DerLWF8Sq2C3ZNL9NhIbWK+uGUu8gbLfzZ7UHqlNmQXzZtsC5ztf07T1JTZLOWWLI2RX2ppQRT36Mrcm06EKxWsFeCEh5pvBlf1eysXA3nNsr/qZQPSI6/UKNhslsKjWc21CvK8q1un1WZ5mqD0YLieXR3dRmPeUe9Kh5IBuSAEDNBUKLmfueDYe7wmWjqUSEFlp0LduAIWHYLUCwJQO9MaR6BT6WIAuu0cVoYi5EHCBePhemRoA6COpXsYKEMMvQRTdBdaljXT7oemr6it6hp46v7UKgdsVfBpR029vRazTEJm1tl2TKquTQG2GUM5wAYVJ0ENHOBao+W0xf0Ca0A8Nogtk/Am47LZ1H0tLXleVunAql8SFdXYOR9zh/vjna0lcoc03NYyUFxKqc2/4VUvAggNZaucp7zZl1wjyGLVW4dznElhT8h1y5/A1MmhzHOBUAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=44d5fdb693e4871098bdf55f7bba10a2^sys_idNOT IN14d5fdb693e4871098bdf55f7bba10d9,98d5fdb693e4871098bdf55f7bba10d5,9cd5fdb693e4871098bdf55f7bba10d7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Update Return Request status to Shipping Label Sent</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CircleBack Return Confirmation Email">44d5fdb693e4871098bdf55f7bba10a2</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>14d5fdb693e4871098bdf55f7bba10d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <ui_id>cdf5fc11-0d91-4868-91e0-90ae385193fb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2UXWvbMBSG/0rRtTF2nIQ0dyNZYLC1rB256TojS8eJQJZdfaTJQv77jmzHMWlpO+jFCstN0PnS+x49+G5PFC2ATImlmYS0PgRkQ6XzwW0aT4ajZDROmdAM81GqwTqt8O/BgbFYy4WpJN0t/6KlohrvsaDJdE/YWkiuQZHp3X1ABMcZ2YhH8WU8ZkmcJIMoGkyGcTZOsnjAEwrsEkdImoHE0h9eNp6fc2F31bOxr/3ei6smUWru9YyigMDWguKASnIqDQSkoIpTW+odmVrtMKCB8msld13FWiiLE4mv3RrxG++dRL4uB7TGoMl1x7RdWhPO59TSW5zMcE9tKVuXgoFplsIhp07aWT/WFFxXVpSqaal9tt2ldIW6anZCugHHN8KIMygCKu/TK29t5Lfr8vHmqHIhVL2TNilLRmV3otZqkTnr9ewJSChwUFrQqhJqlVa63Ii6GbUU4UriIcxl+YiXGrFSIWVeeIhrpeEC4/M6vKRaeBffcAw2HwJidmYmqTEnL7jE9MF5JY2z1kParMG3MC0q+wkv2EAr9xB0nGtg+NQ9xvf7GT6nBZ7GIXMandvD4SnXb8B2CC9hC3EP25ujinNVLbO8ZK5eqOBn0M7bzMWX+Yna+N2oHX4kahtbHx7a3gfqVXxrak0PX2Opdeani6KEm7VonNSYpQZv+PX5+1OW39TzGu3R4EXaoUf7QoDk5kR7Z+L4hYYC5VlIG1NnX+k2ebFskx3z7wZ9PI7q33/0/z307/8AM91nYqMIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=14d5fdb693e4871098bdf55f7bba10d9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment>Wait 30 seconds before sending confirmation email</comment>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CircleBack Return Confirmation Email">44d5fdb693e4871098bdf55f7bba10a2</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>98d5fdb693e4871098bdf55f7bba10d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <ui_id>db08d50f-74fe-4d21-9696-ee982b7fb5ae</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2X227jNhCGXyXQtemSEiVTuVvYCRog3QC2u73YLgSKh5iALHkpKRvXyLuXlOhYsp1Tc0AXLWAg0AxJ/fyHX4b6uvFyuhTeqVeppSjqKuG1ppUqcm/g3dCstikUjyCAyPxOIDw1vwCaLFflKqPrL25QAE9mghU5L01uRbVZtRLaO914bKEyrkXunX79NvAUN4MZZ4JQjMgI+RAiGEUBoyhNg4ilMJWxWSKjqcjM0MlOz8NKq/XKZq4zxcV+/PJwoUJzKy0ceOK2EjkXRpOkWSkG3pLmnFaFXt9HtKD8Ks92gYXKK7OeZwffluov82YM7TgpzC6ZaHP3j4kzqg3LCa3orNI1q2rthrJFoZgoW3+4kLTOqnE31g64WjXymykVTbPt7CKrl/nn1hvvfoFtXUykLo0IsbIbtcrdNuRsUfyYblWeq7zxxCWzgtHs/olWlVZpXVk9G69W8wfsbjNHDBeZWJp3J0u6Wqn8Olnp4kY17zPyl8NmoaHMih9GZ6mu8yFldubQlIIOz0180oS/UK3sxn8zy5jJthRcTOi6tKdCm+1aCb/n6nstLppjxgSiozAFMREUYD9GgMbYB3EkRgJLEgU09u4GXrkuxxkty52JpnrJ99pa0FrqzEta/+0UptWq+mRk3gjn091gB5NVmTQPO4xuE0RwGIRRwpRmJg8TLcwpyM0fo7isDqF6zpSnWMPhY6wJ2mFt3pyqwdFdOMQOYpfduSef24QDzH8hYLaGR/ki/0m+el732eq5rcqkPY5OdLPqO1LXY8xHJCY4DUCQ4hDgWEpAIMEACwpZ6PMRRux9GHNtQGb0utusDily/xqeAgU+3pRwB5SzvPHfSThsTU6TYyYtikzQ/X40N6p+OXelcsDg/zvSq4jZOb2HS9frD8GCMUrM+acgDpgAOEoZIJJJEIg0lEGYknQE3wULbS5hmneA2GzG5sBUgidoyGptvK3u7g4heU4niR/tJF1AplsV+6ocErxgdVMExfewmLjMycVkxwV6nIu2bzwHi8D/ibBot/V6Kvpm713SenZLlZnyJ23jKYtaNyZNz8ZX00nyx6f5+NezaTI9m82nF+P52eSjYMJSogBFEUAIBgCjNLI3uhBAEVIc+jgKI/8fwNTpr09iZb9slFVedtAy7zOe/llDGPAjn0T76VfyJTt8jbtyjkl0nB3ELo8t4CgL3ooyDOHP1H7eirOe2X3MenZ/CDOCkygNIQFCEgJwMCIgRr4PoohyhDDjEr43M9vbUMkWgtfNl8XLmw5Bj97KulDMdu95WIEDY3c4+1xMO3GHRfRmlzJywAVb5l1xxxjp7OpfwMrLr2pyJqhmi3MlMltP9znzAELdsvQJ6hbmY25wvo8CLhhA3FCE/cgHJMAjMIpJCrE5emkg3vAG9+1vWP7CGYsTAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=98d5fdb693e4871098bdf55f7bba10d5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send return confirmation email to consumer</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CircleBack Return Confirmation Email">44d5fdb693e4871098bdf55f7bba10a2</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>9cd5fdb693e4871098bdf55f7bba10d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <ui_id>720b7801-bbe9-49fc-a18b-17ac1c379593</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9cd5fdb693e4871098bdf55f7bba10d7"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_44d5fdb693e4871098bdf55f7bba10a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>44d5fdb693e4871098bdf55f7bba10c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_44d5fdb693e4871098bdf55f7bba10a2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:43</sys_created_on>
+        <sys_id>80d5fdb693e4871098bdf55f7bba10b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_44d5fdb693e4871098bdf55f7bba10a2"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>673439d8393f453285f27f03008bc530</sys_id>
+        <latest_snapshot>44d5fdb693e4871098bdf55f7bba10a2</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=673439d8393f453285f27f03008bc530^sys_idNOT IN14d5fdb693e4871098bdf55f7bba10ff"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>673439d8393f453285f27f03008bc530</plan_id>
+        <snapshot>44d5fdb693e4871098bdf55f7bba10a2</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 07:21:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>14d5fdb693e4871098bdf55f7bba10ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 07:21:44</sys_updated_on>
+        <trigger display_value="">1cd5fdb693e4871098bdf55f7bba10fa</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=673439d8393f453285f27f03008bc530"/>
+</record_update>

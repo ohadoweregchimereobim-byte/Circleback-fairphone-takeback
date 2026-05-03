@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+  <sys_user_role_contains action="INSERT_OR_UPDATE">
+    <sys_id>cd9f283be6ed42da8e1652c55a63172f</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sys_user_role_contains_cd9f283be6ed42da8e1652c55a63172f</sys_update_name>
+    <contains name="34d05e0a46d944e8b29cd01081cb3292">02a089f303844971b303f17bf27f881c</contains>
+    <role name="x_1845356_circle_0.circleback_technician">112aa70fae8b4338ab692766d0f14189</role>
+  </sys_user_role_contains>
+</record_update>

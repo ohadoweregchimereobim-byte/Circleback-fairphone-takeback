@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script">
+  <sys_script action="INSERT_OR_UPDATE">
+    <sys_id>fdc0f10c364b40d3a4d186d7f0d7accf</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>sys_script_fdc0f10c364b40d3a4d186d7f0d7accf</sys_update_name>
+    <abort_action>false</abort_action>
+    <access>package_private</access>
+    <action_delete>false</action_delete>
+    <action_insert>true</action_insert>
+    <action_query>false</action_query>
+    <action_update>true</action_update>
+    <active>true</active>
+    <add_message>false</add_message>
+    <advanced>true</advanced>
+    <change_fields>false</change_fields>
+    <client_callable>false</client_callable>
+    <collection>x_1845356_circle_0_device_record</collection>
+    <condition>current.triage_decision.changes()</condition>
+    <description>Routes triaged devices to Processing Jobs. Creates a job matching the triage decision (Refurbish/Spare Parts Harvest/Recycle), marks triage as completed to prevent duplicates, and updates the linked Return Request status to In Processing.</description>
+    <execute_function>false</execute_function>
+    <filter_condition>triage_completedISNOTEMPTY^triage_completed=false^triage_decisionISNOTEMPTY^triage_decisionNOT INpending^EQ</filter_condition>
+    <is_rest>false</is_rest>
+    <message/>
+    <name>CircleBack Triage Router</name>
+    <order>200</order>
+    <priority>100</priority>
+    <rest_method/>
+    <rest_method_text/>
+    <rest_service/>
+    <rest_service_text/>
+    <rest_variables/>
+    <role_conditions/>
+    <script><![CDATA[
+    (function executeRule(current, previous) {
+      // --- 1. Create Processing Job ---
+      var job = new GlideRecord('x_1845356_circle_0_processing_job');
+      job.initialize();
+      job.setValue('device_record', current.getUniqueValue());
+      job.setValue('job_type', current.getValue('triage_decision'));
+      job.setValue('status', 'open');
+      job.setValue('start_date', new GlideDateTime());
+      var jobSysId = job.insert();
+
+      if (!jobSysId) {
+        gs.error('CircleBack Triage Router: Failed to create Processing Job for Device Record ' + current.getValue('device_id'));
+        return;
+      }
+
+      gs.info('CircleBack Triage Router: Created Processing Job for Device ' + current.getValue('device_id') + ' with decision ' + current.getValue('triage_decision'));
+
+      // --- 2. Mark triage as completed on current Device Record ---
+      var deviceGr = new GlideRecord('x_1845356_circle_0_device_record');
+      if (deviceGr.get(current.getUniqueValue())) {
+        deviceGr.setValue('triage_completed', true);
+        deviceGr.setWorkflow(false);
+        deviceGr.update();
+      }
+
+      // --- 3. Update linked Return Request to In Processing ---
+      var returnRequestSysId = current.getValue('return_request');
+      if (returnRequestSysId) {
+        var rr = new GlideRecord('x_1845356_circle_0_return_request');
+        if (rr.get(returnRequestSysId)) {
+          rr.setValue('status', 'in_processing');
+          rr.update();
+          gs.info('CircleBack Triage Router: Return Request ' + rr.getValue('return_reference') + ' advanced to In Processing');
+        }
+      }
+    })(current, previous);
+  ]]></script>
+    <sys_policy/>
+    <template/>
+    <when>after</when>
+  </sys_script>
+</record_update>
