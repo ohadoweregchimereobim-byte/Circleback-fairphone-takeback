@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_1845356_circle_0_return_request">
+  <x_1845356_circle_0_return_request action="INSERT_OR_UPDATE">
+    <sys_id>c43f09f9ce994a2a98264dc79f032faa</sys_id>
+    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+    <sys_update_name>x_1845356_circle_0_return_request_c43f09f9ce994a2a98264dc79f032faa</sys_update_name>
+    <consumer_email>tom.brennan@example.com</consumer_email>
+    <consumer_name>Tom Brennan</consumer_name>
+    <device_condition>working</device_condition>
+    <device_model>Fairbuds XL</device_model>
+    <device_type>headphones</device_type>
+    <postal_address>33 Castle Street, Dublin, D02 XY45</postal_address>
+    <status>complete</status>
+    <submission_date>2026-06-03 07:30:00</submission_date>
+  </x_1845356_circle_0_return_request>
+</record_update>
