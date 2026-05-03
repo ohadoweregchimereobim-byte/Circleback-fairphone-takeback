@@ -22,17 +22,17 @@
   padding: 8px 0 0;
 }
 
-/* Stat card */
+/* Stat card — light green background, dark green accents */
 .cb-impact-card {
   background: $brand-primary-lighter;
   border-radius: $border-radius-large;
   padding: 24px 16px 20px;
   margin-bottom: 16px;
-  border: 1px solid $brand-primary-light;
+  border: 1px solid rgba($brand-primary, 0.2);
   transition: transform 0.2s, box-shadow 0.2s;
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba($brand-primary, 0.15);
+    box-shadow: 0 4px 16px rgba($brand-primary, 0.18);
   }
 }
 
@@ -43,7 +43,7 @@
   margin-bottom: 8px;
 }
 
-/* Large bold green number */
+/* Large bold green number — matches header #2E7D32 */
 .cb-impact-value {
   font-size: 36px;
   font-weight: 800;
@@ -52,7 +52,7 @@
   letter-spacing: -0.5px;
 }
 
-/* Small label underneath */
+/* Small label in dark green for contrast */
 .cb-impact-label {
   font-size: 13px;
   font-weight: 600;

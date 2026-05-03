@@ -8,7 +8,7 @@
     <action_delete>false</action_delete>
     <action_insert>true</action_insert>
     <action_query>false</action_query>
-    <action_update>false</action_update>
+    <action_update>true</action_update>
     <active>true</active>
     <add_message>false</add_message>
     <advanced>true</advanced>
@@ -16,7 +16,7 @@
     <client_callable>false</client_callable>
     <collection>x_1845356_circle_0_return_request</collection>
     <condition>current.submission_date.nil()</condition>
-    <description>Auto-sets Submission Date to now on new Return Requests when the field is empty. Uses GlideDateTime which is available in scoped apps.</description>
+    <description>Auto-sets Submission Date to now on Return Requests when the field is empty. Fires on insert and update to backfill historical records.</description>
     <execute_function>false</execute_function>
     <filter_condition/>
     <is_rest>false</is_rest>

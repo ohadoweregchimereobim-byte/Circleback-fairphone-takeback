@@ -59,6 +59,18 @@
     $input-border: sp-rgb(--now-color_border--primary, #737F84) !default;
     $input-border-focus: #2E7D32 !default;
     $sp-page-bg: sp-rgb(--now-color_background--secondary, #F5F6F7);
+
+    // ── Active nav state (bold link on current page) ──
+    .navbar-inverse .navbar-nav &gt; li.active &gt; a,
+    .navbar-inverse .navbar-nav &gt; li.active &gt; a:hover,
+    .navbar-inverse .navbar-nav &gt; li.active &gt; a:focus {
+      font-weight: 700;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+    .navbar-inverse .navbar-nav &gt; li &gt; a {
+      font-weight: 400;
+      transition: font-weight 0.15s;
+    }
   </css_variables>
     <footer/>
     <footer_fixed>true</footer_fixed>
