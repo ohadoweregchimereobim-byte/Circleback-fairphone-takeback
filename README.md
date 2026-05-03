@@ -57,7 +57,7 @@ CircleBack is that system.
 ![Consumer Portal](screenshots/01-consumer-portal-impact-counter.png)
 
 ### Status Tracker — Complete Journey
-![Status Tracker](screenshots/Status Tracker - Complete Journey.png)
+![Status Tracker](screenshots/Status-Tracker-Complete Journey.png)
 
 ### Programme Dashboard with ESG Metrics
 ![Dashboard](screenshots/03-programme-dashboard-esg.png)
