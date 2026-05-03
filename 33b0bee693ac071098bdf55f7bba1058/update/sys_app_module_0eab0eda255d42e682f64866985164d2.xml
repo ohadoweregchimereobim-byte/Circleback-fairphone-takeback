@@ -8,7 +8,12 @@
     <hint>ESG impact reporting and programme performance overview</hint>
     <link_type>DIRECT</link_type>
     <order>600</order>
-    <query>$pa_dashboard.do?sysparm_dashboard_id=circleback_dashboard</query>
+    <override_menu_roles>false</override_menu_roles>
+    <query>x_1845356_circle_0_dashboard.do</query>
+    <require_confirmation>false</require_confirmation>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
     <title>Programme Dashboard</title>
+    <uncancelable>false</uncancelable>
   </sys_app_module>
 </record_update>
