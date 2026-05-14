@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="reward_type" label="Reward Type" language="en" table="x_1845356_circle_0_reward_fulfilment">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>reward_type</element>
+            <help/>
+            <hint/>
+            <label>Reward Type</label>
+            <language>en</language>
+            <name>x_1845356_circle_0_reward_fulfilment</name>
+            <plural>Reward Types</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 08:12:20</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Reward Type</sys_name>
+            <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+            <sys_update_name>sys_documentation_x_1845356_circle_0_reward_fulfilment_reward_type_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 08:12:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

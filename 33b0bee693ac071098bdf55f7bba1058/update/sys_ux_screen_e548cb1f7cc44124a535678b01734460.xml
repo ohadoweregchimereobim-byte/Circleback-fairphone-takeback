@@ -1,22 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen">
-  <sys_ux_screen action="INSERT_OR_UPDATE">
-    <sys_id>e548cb1f7cc44124a535678b01734460</sys_id>
-    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-    <sys_update_name>sys_ux_screen_e548cb1f7cc44124a535678b01734460</sys_update_name>
-    <active>true</active>
-    <app_config>0c695ba12448416dbf129d13b8ccf7d0</app_config>
-    <description/>
-    <disable_auto_reflow>false</disable_auto_reflow>
-    <disable_interoperable>false</disable_interoperable>
-    <event_mappings/>
-    <macroponent>a9027bea3b2b4b29898d828652d45660</macroponent>
-    <macroponent_config>{"bare":{"type":"JSON_LITERAL","value":true},"headerLevel":{"type":"JSON_LITERAL","value":"1"},"headingOnlyVisibleToScreenReaders":{"type":"JSON_LITERAL","value":false},"interceptNotifications":{"type":"JSON_LITERAL","value":false},"label":{"type":"TRANSLATION_LITERAL","value":{"code":null,"comment":"","message":""}},"propagateNotifications":{"type":"JSON_LITERAL","value":false},"scrollable":{"type":"JSON_LITERAL","value":"y"}}</macroponent_config>
-    <name>Record Default</name>
-    <order>0</order>
-    <parent_macroponent>c276387cc331101080d6d3658940ddd2</parent_macroponent>
-    <required_translations/>
-    <rollback_screen/>
-    <screen_condition/>
-    <screen_type>d20a65d870f544a486b0406cdae1df73</screen_type>
-  </sys_ux_screen>
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="CircleBack Intake">0c695ba12448416dbf129d13b8ccf7d0</app_config>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
+        <event_mappings/>
+        <macroponent display_value="Record Default">a9027bea3b2b4b29898d828652d45660</macroponent>
+        <macroponent_config>{"bare":{"type":"JSON_LITERAL","value":true},"headerLevel":{"type":"JSON_LITERAL","value":"1"},"headingOnlyVisibleToScreenReaders":{"type":"JSON_LITERAL","value":false},"interceptNotifications":{"type":"JSON_LITERAL","value":false},"label":{"type":"TRANSLATION_LITERAL","value":{"code":null,"comment":"","message":""}},"propagateNotifications":{"type":"JSON_LITERAL","value":false},"scrollable":{"type":"JSON_LITERAL","value":"y"}}</macroponent_config>
+        <name>Record Default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations/>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Record Default">d20a65d870f544a486b0406cdae1df73</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-02 22:20:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e548cb1f7cc44124a535678b01734460</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name>sys_ux_screen_e548cb1f7cc44124a535678b01734460</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-02 22:20:24</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=e548cb1f7cc44124a535678b01734460"/>
 </record_update>

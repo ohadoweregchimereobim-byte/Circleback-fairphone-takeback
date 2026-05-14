@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
-  <sp_row action="INSERT_OR_UPDATE">
-    <sys_id>18d4ab6523e2471f9d8e30c34076b2ca</sys_id>
-    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-    <sys_update_name>sp_row_18d4ab6523e2471f9d8e30c34076b2ca</sys_update_name>
-    <class_name/>
-    <order>1</order>
-    <semantic_tag/>
-    <sp_column/>
-    <sp_container>3838ca4e18d34832a9388ee9c32b8ca2</sp_container>
-  </sp_row>
+    <sp_row action="INSERT_OR_UPDATE">
+        <aria_label/>
+        <class_name/>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_column/>
+        <sp_container display_value="Footer">3838ca4e18d34832a9388ee9c32b8ca2</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 10:26:14</sys_created_on>
+        <sys_id>18d4ab6523e2471f9d8e30c34076b2ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name>sp_row_18d4ab6523e2471f9d8e30c34076b2ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 10:26:14</sys_updated_on>
+    </sp_row>
 </record_update>

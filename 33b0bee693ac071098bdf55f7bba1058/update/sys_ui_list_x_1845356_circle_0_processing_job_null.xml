@@ -1,52 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-  <sys_ui_list table="x_1845356_circle_0_processing_job">
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>270ee84dc3a34cf38621890048901fac</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
-      <element>job_reference</element>
-      <position>0</position>
-    </sys_ui_list_element>
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>fd4e67b579164a28be54f9af2df9d63f</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
-      <element>device_record</element>
-      <position>1</position>
-    </sys_ui_list_element>
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>4063846142e948cf94c6533ffd16ee2f</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
-      <element>device_record.return_request</element>
-      <position>2</position>
-    </sys_ui_list_element>
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>2fab273be93446adb661644c4b039d83</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
-      <element>job_type</element>
-      <position>3</position>
-    </sys_ui_list_element>
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>6cd15506bb4c441ba2c8b1434f14b897</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
-      <element>status</element>
-      <position>4</position>
-    </sys_ui_list_element>
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>84f87b024207411d853dfae86f24a465</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
-      <element>assigned_to</element>
-      <position>5</position>
-    </sys_ui_list_element>
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>1a3517d4426c41eb9349a28908c4cce6</sys_id>
-      <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">661d8ebfafd94aa0813a370c5d3051b0</list_id>
-      <element>completion_date</element>
-      <position>6</position>
-    </sys_ui_list_element>
-    <sys_ui_list action="INSERT_OR_UPDATE">
-      <sys_id>661d8ebfafd94aa0813a370c5d3051b0</sys_id>
-      <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-      <view name="NULL">Default view</view>
-      <name>x_1845356_circle_0_processing_job</name>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1845356_circle_0_processing_job" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d0dc6f7693a4c71098bdf55f7bba10fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_id>50dc6f7693a4c71098bdf55f7bba10fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>completion_date</element>
+            <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d0dc6f7693a4c71098bdf55f7bba10fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_id>d4dc6f7693a4c71098bdf55f7bba10fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>device_record</element>
+            <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d0dc6f7693a4c71098bdf55f7bba10fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_id>5cdc6f7693a4c71098bdf55f7bba10fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>job_reference</element>
+            <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d0dc6f7693a4c71098bdf55f7bba10fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_id>d0dc6f7693a4c71098bdf55f7bba10fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>job_type</element>
+            <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d0dc6f7693a4c71098bdf55f7bba10fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_id>58dc6f7693a4c71098bdf55f7bba10fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>materials_recovered_kg</element>
+            <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d0dc6f7693a4c71098bdf55f7bba10fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_id>dcdc6f7693a4c71098bdf55f7bba10fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>outcome_notes</element>
+            <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d0dc6f7693a4c71098bdf55f7bba10fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_id>54dc6f7693a4c71098bdf55f7bba10fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>recycling_partner</element>
+            <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d0dc6f7693a4c71098bdf55f7bba10fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_id>d8dc6f7693a4c71098bdf55f7bba10fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>start_date</element>
+            <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d0dc6f7693a4c71098bdf55f7bba10fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_id>50dc6f7693a4c71098bdf55f7bba10ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>status</element>
+            <list_id display_value="x_1845356_circle_0_processing_job" element="NULL" name="x_1845356_circle_0_processing_job" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d0dc6f7693a4c71098bdf55f7bba10fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_id>d4dc6f7693a4c71098bdf55f7bba10ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1845356_circle_0_processing_job</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0dc6f7693a4c71098bdf55f7bba10fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1845356_circle_0_processing_job</sys_name>
+            <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+            <sys_update_name>sys_ui_list_x_1845356_circle_0_processing_job_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
     </sys_ui_list>
-  </sys_ui_list>
 </record_update>

@@ -1,40 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-  <sys_ui_list table="x_1845356_circle_0_reward_fulfilment">
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>f31ba0dd25474d26a0bd7af3a9619683</sys_id>
-      <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5d6f0445af444589b379aaa206dfaa4d</list_id>
-      <element>reward_reference</element>
-      <position>0</position>
-    </sys_ui_list_element>
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>eaac7213082340ba9a10142dfc57759f</sys_id>
-      <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5d6f0445af444589b379aaa206dfaa4d</list_id>
-      <element>return_request</element>
-      <position>1</position>
-    </sys_ui_list_element>
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>7648b36e394a404f9586324e973967e2</sys_id>
-      <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5d6f0445af444589b379aaa206dfaa4d</list_id>
-      <element>reward_type</element>
-      <position>2</position>
-    </sys_ui_list_element>
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>962e797f7c7745cb9ca8c8e10f130b0a</sys_id>
-      <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5d6f0445af444589b379aaa206dfaa4d</list_id>
-      <element>status</element>
-      <position>3</position>
-    </sys_ui_list_element>
-    <sys_ui_list_element action="INSERT_OR_UPDATE">
-      <sys_id>ab044828783d49f7ab2b22ae99f9265a</sys_id>
-      <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5d6f0445af444589b379aaa206dfaa4d</list_id>
-      <element>issue_date</element>
-      <position>4</position>
-    </sys_ui_list_element>
-    <sys_ui_list action="INSERT_OR_UPDATE">
-      <sys_id>5d6f0445af444589b379aaa206dfaa4d</sys_id>
-      <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-      <view name="NULL">Default view</view>
-      <name>x_1845356_circle_0_reward_fulfilment</name>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1845356_circle_0_reward_fulfilment" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>expiry_date</element>
+            <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">60bca77693a4c71098bdf55f7bba10f6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:07</sys_created_on>
+            <sys_id>28bca77693a4c71098bdf55f7bba10f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>issue_date</element>
+            <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">60bca77693a4c71098bdf55f7bba10f6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:07</sys_created_on>
+            <sys_id>a4bca77693a4c71098bdf55f7bba10f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>processing_job</element>
+            <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">60bca77693a4c71098bdf55f7bba10f6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:07</sys_created_on>
+            <sys_id>2cbca77693a4c71098bdf55f7bba10f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>return_request</element>
+            <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">60bca77693a4c71098bdf55f7bba10f6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:07</sys_created_on>
+            <sys_id>a0bca77693a4c71098bdf55f7bba10f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>reward_code</element>
+            <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">60bca77693a4c71098bdf55f7bba10f6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:07</sys_created_on>
+            <sys_id>28bca77693a4c71098bdf55f7bba10f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>reward_type</element>
+            <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">60bca77693a4c71098bdf55f7bba10f6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:07</sys_created_on>
+            <sys_id>acbca77693a4c71098bdf55f7bba10f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>reward_value_eur</element>
+            <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">60bca77693a4c71098bdf55f7bba10f6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:07</sys_created_on>
+            <sys_id>24bca77693a4c71098bdf55f7bba10fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>status</element>
+            <list_id display_value="x_1845356_circle_0_reward_fulfilment" element="NULL" name="x_1845356_circle_0_reward_fulfilment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">60bca77693a4c71098bdf55f7bba10f6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:07</sys_created_on>
+            <sys_id>a8bca77693a4c71098bdf55f7bba10fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1845356_circle_0_reward_fulfilment</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-03 16:01:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>60bca77693a4c71098bdf55f7bba10f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1845356_circle_0_reward_fulfilment</sys_name>
+            <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+            <sys_update_name>sys_ui_list_x_1845356_circle_0_reward_fulfilment_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-03 16:01:07</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
     </sys_ui_list>
-  </sys_ui_list>
 </record_update>

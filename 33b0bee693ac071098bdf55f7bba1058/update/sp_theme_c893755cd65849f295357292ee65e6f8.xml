@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
-  <sp_theme action="INSERT_OR_UPDATE">
-    <sys_id>c893755cd65849f295357292ee65e6f8</sys_id>
-    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-    <sys_update_name>sp_theme_c893755cd65849f295357292ee65e6f8</sys_update_name>
-    <css_variables>
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>
     // ── Brand (Fairphone Green #2E7D32) ──
     $brand-primary:         #2E7D32 !default;
     $brand-primary-dark:    #1B5E20 !default;
@@ -72,15 +69,28 @@
       transition: font-weight 0.15s;
     }
   </css_variables>
-    <footer/>
-    <footer_fixed>true</footer_fixed>
-    <header>bf5ec2f2cb10120000f8d856634c9c0c</header>
-    <icon/>
-    <logo/>
-    <logo_alt_text/>
-    <matching_now_experience_theme/>
-    <name>CircleBack Green Theme</name>
-    <navbar_fixed>true</navbar_fixed>
-    <turn_off_scss_compilation>false</turn_off_scss_compilation>
-  </sp_theme>
+        <footer/>
+        <footer_fixed>true</footer_fixed>
+        <header display_value="Stock Header">bf5ec2f2cb10120000f8d856634c9c0c</header>
+        <icon/>
+        <logo/>
+        <logo_alt_text/>
+        <matching_now_experience_theme/>
+        <name>CircleBack Green Theme</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-02 20:59:13</sys_created_on>
+        <sys_id>c893755cd65849f295357292ee65e6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CircleBack Green Theme</sys_name>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name>sp_theme_c893755cd65849f295357292ee65e6f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-02 20:59:13</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_theme>
+    <sys_translated_text action="delete_multiple" query="documentkey=c893755cd65849f295357292ee65e6f8"/>
 </record_update>

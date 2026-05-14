@@ -1,14 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_property">
-  <sys_ux_page_property action="INSERT_OR_UPDATE">
-    <sys_id>2d7add03fc4a4bd08a7c331d9b0a9780</sys_id>
-    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-    <sys_update_name>sys_ux_page_property_2d7add03fc4a4bd08a7c331d9b0a9780</sys_update_name>
-    <description/>
-    <name>chrome_footer</name>
-    <page>63ed5be4ea8c47a7ae0b9667e364f80d</page>
-    <route/>
-    <suffix>chrome_footer</suffix>
-    <type>json</type>
-    <value>{"public_page":{"enable_footer_topbar":false,"footer_topbar_options":{},"enable_footer_bar":false,"footer_bar_options":{}}}</value>
-  </sys_ux_page_property>
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>chrome_footer</name>
+        <page display_value="CircleBack Intake">63ed5be4ea8c47a7ae0b9667e364f80d</page>
+        <required_translations/>
+        <route/>
+        <suffix>chrome_footer</suffix>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-02 22:20:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d7add03fc4a4bd08a7c331d9b0a9780</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_footer</sys_name>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name>sys_ux_page_property_2d7add03fc4a4bd08a7c331d9b0a9780</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-02 22:20:23</sys_updated_on>
+        <type>json</type>
+        <unique_name/>
+        <value>{"public_page":{"enable_footer_topbar":false,"footer_topbar_options":{},"enable_footer_bar":false,"footer_bar_options":{}}}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=2d7add03fc4a4bd08a7c331d9b0a9780"/>
 </record_update>

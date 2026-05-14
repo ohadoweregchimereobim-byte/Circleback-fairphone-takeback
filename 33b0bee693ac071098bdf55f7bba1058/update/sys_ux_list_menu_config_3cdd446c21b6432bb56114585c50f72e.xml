@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_menu_config">
-  <sys_ux_list_menu_config action="INSERT_OR_UPDATE">
-    <sys_id>3cdd446c21b6432bb56114585c50f72e</sys_id>
-    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-    <sys_update_name>sys_ux_list_menu_config_3cdd446c21b6432bb56114585c50f72e</sys_update_name>
-    <active>true</active>
-    <description>Navigation lists for the CircleBack Intake Technician Workspace</description>
-    <name>CircleBack Workspace List Configuration</name>
-  </sys_ux_list_menu_config>
+    <sys_ux_list_menu_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Navigation lists for the CircleBack Intake Technician Workspace</description>
+        <name>CircleBack Workspace List Configuration</name>
+        <sys_class_name>sys_ux_list_menu_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-02 22:20:23</sys_created_on>
+        <sys_id>3cdd446c21b6432bb56114585c50f72e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CircleBack Workspace List Configuration</sys_name>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name>sys_ux_list_menu_config_3cdd446c21b6432bb56114585c50f72e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-02 22:20:23</sys_updated_on>
+    </sys_ux_list_menu_config>
 </record_update>

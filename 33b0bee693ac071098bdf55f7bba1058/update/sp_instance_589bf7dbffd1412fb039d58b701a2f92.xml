@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
-  <sp_instance action="INSERT_OR_UPDATE">
-    <sys_id>589bf7dbffd1412fb039d58b701a2f92</sys_id>
-    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-    <sys_update_name>sp_instance_589bf7dbffd1412fb039d58b701a2f92</sys_update_name>
-    <active>true</active>
-    <advanced_placeholder_dimensions>false</advanced_placeholder_dimensions>
-    <async_load>false</async_load>
-    <async_load_device_type>desktop,tablet,mobile</async_load_device_type>
-    <async_load_trigger>viewport</async_load_trigger>
-    <class_name/>
-    <color>default</color>
-    <css/>
-    <glyph/>
-    <id/>
-    <order>1</order>
-    <placeholder_dimensions>{
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced_placeholder_dimensions>false</advanced_placeholder_dimensions>
+        <async_load>false</async_load>
+        <async_load_device_type>desktop,tablet,mobile</async_load_device_type>
+        <async_load_trigger>viewport</async_load_trigger>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <placeholder_dimensions>{
 	"mobile": {
 		"height": "250px",
 		"width": "100%"
@@ -28,7 +25,7 @@
 		"width": "100%"
 	}
 }</placeholder_dimensions>
-    <placeholder_dimensions_script>function evaluateConfig(options) { return {
+        <placeholder_dimensions_script><![CDATA[function evaluateConfig(options) { return {
 	"mobile": {
 		"height": "250px",
 		"width": "100%"
@@ -41,8 +38,8 @@
 		"height": "250px",
 		"width": "100%"
 	}
-}; }</placeholder_dimensions_script>
-    <placeholder_template>&lt;!--
+}; }]]></placeholder_dimensions_script>
+        <placeholder_template>&lt;!--
 	AngularJS template with configurable options.
 	Use the "options" object to control dynamic behavior.
 	Example: Display an element when max row count is 10:
@@ -57,14 +54,27 @@
 	&lt;div class="skeleton-box skeleton-line small"&gt;&lt;/div&gt;
 	&lt;div class="skeleton-box skeleton-line medium"&gt;&lt;/div&gt;
 &lt;/div&gt;</placeholder_template>
-    <preserve_placeholder_size>false</preserve_placeholder_size>
-    <roles/>
-    <short_description/>
-    <size>md</size>
-    <sp_column>1f93ad8980d94024a5e2779f005c80e2</sp_column>
-    <sp_widget>d35d69d5a849458db2c108477335621f</sp_widget>
-    <title/>
-    <url/>
-    <widget_parameters/>
-  </sp_instance>
+        <preserve_placeholder_size>false</preserve_placeholder_size>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">1f93ad8980d94024a5e2779f005c80e2</sp_column>
+        <sp_widget display_value="CircleBack Return Form">d35d69d5a849458db2c108477335621f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-02 20:59:12</sys_created_on>
+        <sys_id>589bf7dbffd1412fb039d58b701a2f92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name>sp_instance_589bf7dbffd1412fb039d58b701a2f92</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-02 20:59:12</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=589bf7dbffd1412fb039d58b701a2f92"/>
 </record_update>

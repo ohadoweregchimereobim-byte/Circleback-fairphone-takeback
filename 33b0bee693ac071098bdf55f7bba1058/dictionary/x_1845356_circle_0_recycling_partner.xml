@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element active="false" audit="true" db_object_id="56e2c2bf87f54f259eb010c02e0df2ee" label="Recycling Partner" name="x_1845356_circle_0_recycling_partner" type="collection">
+        <element label="Country" mandatory="true" max_length="100" name="country" type="string"/>
+        <element choice="1" label="Certification" max_length="40" name="certification" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="None" sequence="4" value="none"/>
+                <element inactive_on_update="false" label="ISO 14001" sequence="2" value="iso_14001"/>
+                <element inactive_on_update="false" label="R2v3" sequence="0" value="r2v3"/>
+                <element inactive_on_update="false" label="Multiple" sequence="3" value="multiple"/>
+                <element inactive_on_update="false" label="e-Stewards" sequence="1" value="e_stewards"/>
+            </choice>
+        </element>
+        <element display="true" label="Partner Name" mandatory="true" max_length="200" name="partner_name" type="string"/>
+        <element label="Contact Name" max_length="100" name="contact_name" type="string"/>
+        <element label="Accepted Device Types" max_length="1000" name="accepted_device_types" type="string"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Contact Phone" max_length="40" name="contact_phone" type="string"/>
+        <element label="Notes" max_length="4000" name="notes" type="string"/>
+        <element label="Contact Email" max_length="255" name="contact_email" type="email"/>
+        <element default="javascript:gs.nowDateTime();" label="Date Added" max_length="40" name="date_added" type="glide_date"/>
+    </element>
+</database>

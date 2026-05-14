@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element active="false" audit="true" db_object_id="0461f3326d0d4daf92228565ef7ab5fe" label="Return Request" name="x_1845356_circle_0_return_request" type="collection">
+        <element choice="3" default="submitted" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
+                <element inactive_on_update="false" label="Shipping Label Sent" sequence="1" value="shipping_label_sent"/>
+                <element inactive_on_update="false" label="Complete" sequence="4" value="complete"/>
+                <element inactive_on_update="false" label="Device Received" sequence="2" value="device_received"/>
+                <element inactive_on_update="false" label="In Processing" sequence="3" value="in_processing"/>
+            </choice>
+        </element>
+        <element label="Consumer Phone" max_length="40" name="consumer_phone" type="string"/>
+        <element label="Notes" max_length="4000" name="notes" type="string"/>
+        <element label="Consumer Email" mandatory="true" max_length="255" name="consumer_email" type="email"/>
+        <element label="Submission Date" max_length="40" name="submission_date" type="glide_date_time"/>
+        <element choice="1" label="Device Condition" max_length="40" name="device_condition" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Working" sequence="0" value="working"/>
+                <element inactive_on_update="false" label="Minor Damage" sequence="1" value="minor_damage"/>
+                <element inactive_on_update="false" label="Unknown" sequence="3" value="unknown"/>
+                <element inactive_on_update="false" label="Major Damage" sequence="2" value="major_damage"/>
+            </choice>
+        </element>
+        <element label="Device Model" mandatory="true" max_length="100" name="device_model" type="string"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Return Reference" max_length="40" name="return_reference" type="string"/>
+        <element choice="1" label="Device Type" max_length="40" name="device_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Headphones" sequence="3" value="headphones"/>
+                <element inactive_on_update="false" label="Other" sequence="4" value="other"/>
+                <element inactive_on_update="false" label="Smartphone" sequence="0" value="smartphone"/>
+                <element inactive_on_update="false" label="Laptop" sequence="2" value="laptop"/>
+                <element inactive_on_update="false" label="Tablet" sequence="1" value="tablet"/>
+            </choice>
+        </element>
+        <element label="Consumer Name" mandatory="true" max_length="100" name="consumer_name" type="string"/>
+        <element label="Postal Address" mandatory="true" max_length="1000" name="postal_address" type="string"/>
+    </element>
+</database>

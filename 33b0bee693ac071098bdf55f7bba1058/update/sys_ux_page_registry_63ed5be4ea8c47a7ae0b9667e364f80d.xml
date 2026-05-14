@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
-  <sys_ux_page_registry action="INSERT_OR_UPDATE">
-    <sys_id>63ed5be4ea8c47a7ae0b9667e364f80d</sys_id>
-    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-    <sys_update_name>sys_ux_page_registry_63ed5be4ea8c47a7ae0b9667e364f80d</sys_update_name>
-    <active>true</active>
-    <admin_panel>0c695ba12448416dbf129d13b8ccf7d0</admin_panel>
-    <admin_panel_table>sys_ux_app_config</admin_panel_table>
-    <auth_routes/>
-    <page/>
-    <parent_app>c86a62e2c7022010099a308dc7c26022</parent_app>
-    <path>circleback-intake</path>
-    <root_macroponent>c276387cc331101080d6d3658940ddd2</root_macroponent>
-    <title>CircleBack Intake</title>
-  </sys_ux_page_registry>
+    <sys_ux_page_registry action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_panel>0c695ba12448416dbf129d13b8ccf7d0</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes/>
+        <page/>
+        <parent_app display_value="Unified Navigation app shell">c86a62e2c7022010099a308dc7c26022</parent_app>
+        <path>circleback-intake</path>
+        <root_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-02 22:20:24</sys_created_on>
+        <sys_id>63ed5be4ea8c47a7ae0b9667e364f80d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CircleBack Intake</sys_name>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name>sys_ux_page_registry_63ed5be4ea8c47a7ae0b9667e364f80d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-02 22:20:24</sys_updated_on>
+        <title>CircleBack Intake</title>
+    </sys_ux_page_registry>
 </record_update>

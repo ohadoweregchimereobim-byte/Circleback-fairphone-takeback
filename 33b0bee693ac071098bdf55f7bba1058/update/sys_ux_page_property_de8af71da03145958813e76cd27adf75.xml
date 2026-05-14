@@ -1,14 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_property">
-  <sys_ux_page_property action="INSERT_OR_UPDATE">
-    <sys_id>de8af71da03145958813e76cd27adf75</sys_id>
-    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-    <sys_update_name>sys_ux_page_property_de8af71da03145958813e76cd27adf75</sys_update_name>
-    <description/>
-    <name>chrome_tab</name>
-    <page>63ed5be4ea8c47a7ae0b9667e364f80d</page>
-    <route/>
-    <suffix>chrome_tab</suffix>
-    <type>json</type>
-    <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New x_1845356_circle_0_return_request"},"routeInfo":{"route":"record","fields":{"table":"x_1845356_circle_0_return_request","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1845356_circle_0_return_request","canCreate":true}}},{"label":{"translatable":true,"message":"New x_1845356_circle_0_device_record"},"routeInfo":{"route":"record","fields":{"table":"x_1845356_circle_0_device_record","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1845356_circle_0_device_record","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
-  </sys_ux_page_property>
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>chrome_tab</name>
+        <page display_value="CircleBack Intake">63ed5be4ea8c47a7ae0b9667e364f80d</page>
+        <required_translations/>
+        <route/>
+        <suffix>chrome_tab</suffix>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-02 22:20:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de8af71da03145958813e76cd27adf75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name>sys_ux_page_property_de8af71da03145958813e76cd27adf75</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-02 22:20:23</sys_updated_on>
+        <type>json</type>
+        <unique_name/>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New x_1845356_circle_0_return_request"},"routeInfo":{"route":"record","fields":{"table":"x_1845356_circle_0_return_request","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1845356_circle_0_return_request","canCreate":true}}},{"label":{"translatable":true,"message":"New x_1845356_circle_0_device_record"},"routeInfo":{"route":"record","fields":{"table":"x_1845356_circle_0_device_record","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1845356_circle_0_device_record","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=de8af71da03145958813e76cd27adf75"/>
 </record_update>

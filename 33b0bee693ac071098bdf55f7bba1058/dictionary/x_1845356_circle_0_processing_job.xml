@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element active="false" audit="true" db_object_id="9ded3798acf14139b6d55c0282741d47" label="Processing Job" name="x_1845356_circle_0_processing_job" type="collection">
+        <element label="Value Recovered GBP" max_length="20" name="value_recovered_gbp" type="decimal"/>
+        <element label="Completion Date" max_length="40" name="completion_date" type="glide_date_time"/>
+        <element label="Device Record" mandatory="true" max_length="32" name="device_record" reference="x_1845356_circle_0_device_record" type="reference"/>
+        <element choice="3" default="open" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
+                <element inactive_on_update="false" label="Complete" sequence="2" value="complete"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+            </choice>
+        </element>
+        <element label="Materials Recovered KG" max_length="20" name="materials_recovered_kg" type="decimal"/>
+        <element choice="3" label="Job Type" mandatory="true" max_length="40" name="job_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Recycle" sequence="2" value="recycle"/>
+                <element inactive_on_update="false" label="Spare Parts Harvest" sequence="1" value="spare_parts_harvest"/>
+                <element inactive_on_update="false" label="Refurbish" sequence="0" value="refurbish"/>
+            </choice>
+        </element>
+        <element label="Outcome Notes" max_length="4000" name="outcome_notes" type="string"/>
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Recycling Partner" max_length="32" name="recycling_partner" reference="x_1845356_circle_0_recycling_partner" type="reference"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Job Reference" max_length="40" name="job_reference" type="string"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date_time"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="device_record"/>
+        </index>
+        <index name="index3">
+            <element name="recycling_partner"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element active="false" audit="true" db_object_id="4d3d08af8a6a4ed9961912b9776aaadb" label="Device Record" name="x_1845356_circle_0_device_record" type="collection">
+        <element label="Weight KG" max_length="20" name="weight_kg" type="decimal"/>
+        <element label="Serial Number" max_length="100" name="serial_number" type="string"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Device ID" max_length="40" name="device_id" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element choice="3" default="pending" label="Triage Decision" max_length="40" name="triage_decision" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Recycle" sequence="2" value="recycle"/>
+                <element inactive_on_update="false" label="Pending" sequence="3" value="pending"/>
+                <element inactive_on_update="false" label="Refurbish" sequence="0" value="refurbish"/>
+                <element inactive_on_update="false" label="Spare Parts Harvest" sequence="1" value="spare_parts_harvest"/>
+            </choice>
+        </element>
+        <element label="Triage Completed" max_length="40" name="triage_completed" type="boolean"/>
+        <element label="Date Received" mandatory="true" max_length="40" name="date_received" type="glide_date_time"/>
+        <element label="Technician Notes" max_length="4000" name="technician_notes" type="string"/>
+        <element choice="3" label="Actual Condition" mandatory="true" max_length="40" name="actual_condition" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Scrap" sequence="3" value="scrap"/>
+                <element inactive_on_update="false" label="Parts Only" sequence="2" value="parts_only"/>
+                <element inactive_on_update="false" label="Repairable" sequence="1" value="repairable"/>
+                <element inactive_on_update="false" label="Working" sequence="0" value="working"/>
+            </choice>
+        </element>
+        <element label="Received By" mandatory="true" max_length="32" name="received_by" reference="sys_user" type="reference"/>
+        <element label="Return Request" mandatory="true" max_length="32" name="return_request" reference="x_1845356_circle_0_return_request" type="reference"/>
+        <index name="index">
+            <element name="received_by"/>
+        </index>
+        <index name="index2">
+            <element name="return_request"/>
+        </index>
+    </element>
+</database>

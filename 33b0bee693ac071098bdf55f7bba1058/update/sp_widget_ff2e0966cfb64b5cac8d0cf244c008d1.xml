@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
-  <sp_widget action="INSERT_OR_UPDATE">
-    <sys_id>ff2e0966cfb64b5cac8d0cf244c008d1</sys_id>
-    <sys_scope display_value="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_scope>
-    <sys_update_name>sp_widget_ff2e0966cfb64b5cac8d0cf244c008d1</sys_update_name>
-    <category>custom</category>
-    <client_script>api.controller = function () {
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function () {
     /* widget controller */
     var c = this;
 };
-</client_script>
-    <controller_as>c</controller_as>
-    <css>
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>
     .cb-footer {
       padding: 24px 0 8px;
     }
@@ -25,33 +22,45 @@
       margin: 0;
     }
   </css>
-    <data_table>sp_instance</data_table>
-    <demo_data/>
-    <description/>
-    <docs/>
-    <field_list/>
-    <has_preview>false</has_preview>
-    <id>cb_footer</id>
-    <internal>false</internal>
-    <link>function link(scope, element, attrs, controller) {
-}</link>
-    <name>CircleBack Footer</name>
-    <option_schema/>
-    <public>false</public>
-    <roles/>
-    <script>(function () {
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>cb_footer</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+}]]></link>
+        <name>CircleBack Footer</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
     /* populate the 'data' object */
     /* e.g., data.table = $sp.getValue('table'); */
-})();</script>
-    <servicenow>false</servicenow>
-    <template>
-    &lt;div class="cb-footer text-center"&gt;
-      &lt;hr class="cb-footer-divider"&gt;
-      &lt;p class="cb-footer-text"&gt;
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-03 10:26:14</sys_created_on>
+        <sys_id>ff2e0966cfb64b5cac8d0cf244c008d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CircleBack Footer</sys_name>
+        <sys_package display_value="CircleBack - Fairphone Take Back Hub" source="x_1845356_circle_0">33b0bee693ac071098bdf55f7bba1058</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CircleBack - Fairphone Take Back Hub">33b0bee693ac071098bdf55f7bba1058</sys_scope>
+        <sys_update_name>sp_widget_ff2e0966cfb64b5cac8d0cf244c008d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-03 10:26:14</sys_updated_on>
+        <template><![CDATA[
+    <div class="cb-footer text-center">
+      <hr class="cb-footer-divider">
+      <p class="cb-footer-text">
         CircleBack is Fairphone's take-back programme.
         Helping close the loop on e-waste.
-      &lt;/p&gt;
-    &lt;/div&gt;
-  </template>
-  </sp_widget>
+      </p>
+    </div>
+  ]]></template>
+    </sp_widget>
 </record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element active="false" audit="true" db_object_id="53c532536ca54d88b049cdef3ac02918" label="Reward Fulfilment" name="x_1845356_circle_0_reward_fulfilment" type="collection">
+        <element display="true" label="Reward Code" max_length="100" name="reward_code" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element label="Reward Value EUR" mandatory="true" max_length="20" name="reward_value_eur" type="decimal"/>
+        <element choice="3" default="issued" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Redeemed" sequence="1" value="redeemed"/>
+                <element inactive_on_update="false" label="Expired" sequence="2" value="expired"/>
+                <element inactive_on_update="false" label="Issued" sequence="0" value="issued"/>
+            </choice>
+        </element>
+        <element label="Processing Job" mandatory="true" max_length="32" name="processing_job" reference="x_1845356_circle_0_processing_job" type="reference"/>
+        <element label="Issue Date" max_length="40" name="issue_date" type="glide_date_time"/>
+        <element choice="3" default="gift_card" label="Reward Type" mandatory="true" max_length="40" name="reward_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Store Credit" sequence="2" value="store_credit"/>
+                <element inactive_on_update="false" label="Gift Card" sequence="0" value="gift_card"/>
+                <element inactive_on_update="false" label="Discount Code" sequence="1" value="discount_code"/>
+            </choice>
+        </element>
+        <element label="Return Request" mandatory="true" max_length="32" name="return_request" reference="x_1845356_circle_0_return_request" type="reference"/>
+        <element label="Expiry Date" max_length="40" name="expiry_date" type="glide_date_time"/>
+        <index name="index">
+            <element name="processing_job"/>
+        </index>
+        <index name="index2">
+            <element name="return_request"/>
+        </index>
+    </element>
+</database>
